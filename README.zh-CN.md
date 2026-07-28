@@ -45,6 +45,8 @@ WorkFn 中的每个 Skill 都先执行参数解析和完整度检查。Skill 不
 
 它负责识别问题、选择 Skill、安排顺序、传递必要结果并设置停止条件。它不自动执行其他 Skill。
 
+如果需要了解每个 Skill 能解决什么问题以及适用场景，请查看 [WorkFn Skill 使用场景指南](SKILL_USE_CASE_GUIDE.zh-CN.md)。
+
 ## 第一批 Skill
 
 第一批计划完善：`REPLY()`、`RFQ()`、`FOLLOWUP()`。其中 `REPLY()` 和 `FOLLOWUP()` 已升级至 v0.2.0 测试规则，`RFQ()` 仍等待补充。

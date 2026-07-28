@@ -32,6 +32,8 @@ Version `v0.1.0` is a local, publication-ready documentation scaffold. The Skill
 
 See [SKILL_INDEX.md](SKILL_INDEX.md) for the complete catalog and priorities.
 
+For a Chinese problem-to-Skill and use-case guide, see [WorkFn Skill Use Case Guide](SKILL_USE_CASE_GUIDE.zh-CN.md).
+
 ## Repository structure
 
 - Ten numbered categories contain 51 indexed Skills.
