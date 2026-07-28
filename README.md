@@ -12,9 +12,11 @@ Every WorkFn Skill first performs parameter parsing and completeness checks. A S
 
 ## Naming
 
-Skills use uppercase function-style display names such as `REPLY()`, `RFQ()`, and `FOLLOWUP()`. Their directories use lowercase names without parentheses, such as `reply`, `rfq`, and `followup`.
+Skills use uppercase function-style display names such as `REPLY()`, `RFQ()`, and `FOLLOWUP()`. Each leaf Skill directory matches its formal Skill ID, such as `zayn-reply`, `zayn-rfq`, and `zayn-followup`.
 
 Each WorkFn Skill has a unique publishable Skill ID using the `zayn-` prefix.
+
+Every formal `SKILL.md` must start with YAML front matter containing `name` and `description`. Codex uses these fields for Skill discovery, card display, and invocation matching.
 
 Example:
 
@@ -22,7 +24,7 @@ Example:
 - Display Name: `REPLY()`
 - Chinese Name: 客户回复
 
-The Skill ID is intended for future publishing and brand identification. This does not claim compatibility with any specific platform. Existing directory names remain unchanged until target-platform requirements are confirmed.
+The Skill ID is intended for publishing and brand identification. This does not claim compatibility with any specific platform. Leaf Skill directory names now match their formal `zayn-` Skill IDs.
 
 ## Current stage
 
@@ -34,10 +36,12 @@ See [SKILL_INDEX.md](SKILL_INDEX.md) for the complete catalog and priorities.
 
 For a Chinese problem-to-Skill and use-case guide, see [WorkFn Skill Use Case Guide](SKILL_USE_CASE_GUIDE.zh-CN.md).
 
+To configure WorkFn as a custom GPT in ChatGPT, see the [WorkFn Custom GPT Package](gpt_package/README.md).
+
 ## Repository structure
 
 - Ten numbered categories contain 51 indexed Skills.
-- The project-level orchestration Skill is stored under `00_skill_orchestration/route/`.
+- The project-level orchestration Skill is stored under `00_skill_orchestration/zayn-route/`.
 - Alibaba-specific Skills are stored under `08_platform_specific/alibaba/`.
 - Product Intelligence is stored under `09_product_intelligence/`.
 - Each Skill contains `README.md`, `SKILL.md`, `examples.md`, `tests.md`, and `changelog.md`.

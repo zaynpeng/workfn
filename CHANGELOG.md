@@ -25,4 +25,6 @@
 - 新增 `ROUTE()` Skill 路由与编排，以及 `00_skill_orchestration` 项目级分类。
 - 为所有 Skill 增加统一的 `zayn-` 正式 Skill ID，并保留原函数式展示名称和中文名称。
 - 将 `REPLY()`、`FOLLOWUP()`、`ALI_RFQ_SCAN()` 和 `ALI_RFQ_BID()` 升级至 `v0.2.0` 最新规则，补充最新参数、最低运行条件、双运行模式、停止条件、职责边界、场景案例和协议测试。
+- 将全部 51 个 Skill 的末级文件夹名称统一为对应的 `zayn-` 正式 Skill ID。
+- 统一修复全部 51 个正式 `SKILL.md` 的 YAML front matter、卡片名称和中文 description，并新增只读检查脚本。
 - 尚未补充真实案例、测试结果或平台适配。

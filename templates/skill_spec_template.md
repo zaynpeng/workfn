@@ -1,3 +1,8 @@
+---
+name: zayn-{skill-name}
+description: {一句话说明解决的问题、使用场景和核心输出}
+---
+
 # SKILL_NAME()
 
 ## 1. 基本信息

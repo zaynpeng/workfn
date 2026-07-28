@@ -29,8 +29,9 @@
 - 已新增 `ROUTE()` Skill 路由与编排初版规则。
 - `ROUTE()` 位于所有业务 Skill 之上，只负责选择 Skill、安排顺序、管理参数传递和设置停止条件，不直接完成业务分析。
 - 已为所有 WorkFn Skill 统一增加 `zayn-` 前缀的正式 Skill ID，用于体现 Zayn 的个人品牌。
-- 当前保留原有文件夹名称和函数式 Display Name。是否批量重命名目录，等待目标平台规范确认后再决定。
+- 已将全部 51 个 Skill 的末级文件夹名称统一为对应的 `zayn-` 正式 Skill ID，同时保留函数式 Display Name 和中文名称。
 - `ALI_RFQ_SCAN()` 和 `ALI_RFQ_BID()` 已升级至 `v0.2.0`，补齐明确最低运行条件、停止条件、相邻 Skill 边界、场景案例和协议测试。
+- 已为全部 51 个正式 `SKILL.md` 统一规范 YAML front matter，包含用于 Skill 识别、卡片展示和调用发现的唯一 `name` 与中文 `description`。
 
 ## 未完成
 

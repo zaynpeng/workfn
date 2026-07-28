@@ -20,7 +20,9 @@ WorkFn 中的每个 Skill 都先执行参数解析和完整度检查。Skill 不
 2. 函数式展示名称，例如 `REPLY()`
 3. 中文名称，例如“客户回复”
 
-正式 Skill ID 用于未来的 GitHub、WorkBuddy 或其他平台发布，并体现 Zayn 的个人品牌；这不代表当前已经兼容任何具体平台。现有文件夹名称保持不变，是否同步改名将在目标平台规范确认后决定。
+每个正式 `SKILL.md` 必须以 YAML front matter 开头，并包含 `name` 和 `description`。Codex 使用这些字段进行 Skill 识别、卡片展示和调用发现。
+
+正式 Skill ID 用于 GitHub、WorkBuddy 或其他平台发布，并体现 Zayn 的个人品牌；这不代表当前已经兼容任何具体平台。每个 Skill 的末级文件夹名称现已与正式 `zayn-` Skill ID 保持一致。
 
 ## 与普通提示词合集的区别
 
@@ -46,6 +48,8 @@ WorkFn 中的每个 Skill 都先执行参数解析和完整度检查。Skill 不
 它负责识别问题、选择 Skill、安排顺序、传递必要结果并设置停止条件。它不自动执行其他 Skill。
 
 如果需要了解每个 Skill 能解决什么问题以及适用场景，请查看 [WorkFn Skill 使用场景指南](SKILL_USE_CASE_GUIDE.zh-CN.md)。
+
+如果需要把 WorkFn 配置为 ChatGPT 自定义 GPT，请使用 [WorkFn 自定义 GPT 配置包](gpt_package/README.md)。
 
 ## 第一批 Skill
 

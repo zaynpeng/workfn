@@ -7,6 +7,8 @@
 **Author Prefix:** zayn  
 **Version:** 0.1.0
 
+> 对应 `SKILL.md` 必须以 YAML front matter 开头，并包含唯一的 `name` 和一句完整中文 `description`。
+
 - 所属分类：待补充
 - 一句话用途：待补充
 - 当前状态：骨架已建立
