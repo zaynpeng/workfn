@@ -94,7 +94,13 @@ Display Name: ROUTE()
 | Skill ID | Display Name | 解决什么问题 | 典型应用场景 |
 |---|---|---|---|
 | `zayn-keypoint` | `KEYPOINT()` | 从大量信息中提炼结论、问题、风险和下一步 | 长聊天记录、项目资料、邮件线程或跨部门信息整理 |
-| `zayn-report` | `REPORT()` | 形成目标明确、证据充分的工作汇报 | 周报、项目进展、销售汇报、异常说明和管理层更新 |
+| `zayn-report` | `REPORT()` | 识别汇报类型并路由到日报、周报、月报、年中报告、年度报告或通用项目汇报 | 不确定该用哪种汇报；项目进展、销售汇报、异常说明和管理层更新 |
+| `zayn-daily-report` | `DAILY_REPORT()` | 将当天记录转为结果、状态、下一步、负责人和期限 | 日报、下班汇报、当天复盘、检查今日哪些事项没有有效推进 |
+| `zayn-weekly-report` | `WEEKLY_REPORT()` | 分析一周结果密度、等待事项、关闭能力和资源分配 | 周报、周会汇报、多份日报汇总、忙但结果少的复盘 |
+| `zayn-monthly-report` | `MONTHLY_REPORT()` | 复盘月度目标达成、关键成果、结果密度、等待阻塞和下月重点 | 月报、月会汇报、月度业务复盘、整月成果与问题分析 |
+| `zayn-midyear-report` | `MIDYEAR_REPORT()` | 复盘上半年目标达成、结构性问题、资源配置和下半年策略 | 年中总结、半年复盘、上半年汇报、下半年计划 |
+| `zayn-annual-report` | `ANNUAL_REPORT()` | 复盘年度目标达成、关键成果、业务结构、能力成长和下一年度计划 | 年度总结、年度述职、全年复盘、年报和明年计划 |
+| `zayn-cross-functional-collaboration` | `CROSS_FUNCTIONAL_COLLABORATION()` | 整理跨部门事项中的事实、待确认信息、风险、责任边界、下一步动作和沟通版本 | 跨部门确认进度、请求补充信息、同步风险阻塞、避免过早承诺或推责表达 |
 | `zayn-request` | `REQUEST()` | 向内部部门提出完整、可执行的请求 | 请求采购核价、工程确认、财务审核或仓库处理 |
 | `zayn-escalate` | `ESCALATE()` | 判断问题是否需要升级以及如何升级 | 超出权限、重大延期、高额损失、客户升级投诉或跨部门阻塞 |
 | `zayn-decision` | `DECISION()` | 向领导提供清晰的决策选项 | 需要审批价格、赔偿、付款条件、资源投入或项目取舍 |
@@ -146,6 +152,12 @@ Display Name: ROUTE()
 | 判断是否接受退货 | `RMA()` |
 | 今天先跟进哪些客户 | `PRIORITY()` |
 | 给领导汇报复杂项目 | `KEYPOINT()` → `REPORT()` |
+| 写日报或下班总结 | `DAILY_REPORT()` |
+| 写周报或周会汇报 | `WEEKLY_REPORT()` |
+| 写月报或月度复盘 | `MONTHLY_REPORT()` |
+| 写年中总结和下半年计划 | `MIDYEAR_REPORT()` |
+| 写年度述职或明年计划 | `ANNUAL_REPORT()` |
+| 跨部门协同推进、避免过早承诺或推责 | `CROSS_FUNCTIONAL_COLLABORATION()` |
 | 需要领导做决定 | `DECISION()` |
 | 任务太复杂、不知道怎么开始 | `FOCUS()` → `PLAN()` |
 | 陌生产品需要快速理解 | `PRODUCT_BRIEF()` |
@@ -194,6 +206,18 @@ ORDER() → ORDER_KICKOFF() → DELIVERY()
 
 ```text
 KEYPOINT() → REPORT() → DECISION()
+```
+
+### 跨部门协同后对外回复
+
+```text
+CROSS_FUNCTIONAL_COLLABORATION() → REPLY()
+```
+
+### 周期性工作汇报
+
+```text
+REPORT() → DAILY_REPORT() / WEEKLY_REPORT() / MONTHLY_REPORT() / MIDYEAR_REPORT() / ANNUAL_REPORT()
 ```
 
 ### Alibaba RFQ

@@ -1,6 +1,6 @@
 # WorkFn 自定义 GPT 配置包
 
-本目录用于把 WorkFn 的 51 个 Codex Skill 转换为一个可在 ChatGPT 中配置的自定义 GPT。
+本目录用于把 WorkFn 的 55 个 Codex Skill 转换为一个可在 ChatGPT 中配置的自定义 GPT。
 
 ## 包含内容
 
@@ -21,7 +21,7 @@
 
 ## 重要说明
 
-- 自定义 GPT 不会像 Codex 一样逐个“安装”51个本地 Skill。
+- 自定义 GPT 不会像 Codex 一样逐个“安装”55 个本地 Skill。
 - 本包通过一份统一 Instructions 和10份分类 Knowledge 文件复现 Skill 选择与执行逻辑。
 - Knowledge 文件是参考资料；路由流程、事实边界、参数检查和停止规则写在 Instructions 中。
 - 当前未配置外部 API、数据库、自动执行、邮件发送或平台提交。

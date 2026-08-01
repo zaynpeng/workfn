@@ -36,9 +36,13 @@
 | 客户管理 | zayn-reactivate | REACTIVATE() | 沉睡客户激活 | 判断哪些老客户值得重新联系 | Draft for testing | P3 |
 | 客户管理 | zayn-account | ACCOUNT() | 客户策略 | 为重点客户制定阶段性推进策略 | Draft for testing | P3 |
 | 客户管理与销售策略 | zayn-customer-profile | CUSTOMER_PROFILE() | 客户画像 | 基于真实业务记录和公开资料整理客户事实、采购方向、合作历史和信息缺口 | Draft for testing | P1 |
-| 内部协作 | zayn-report | REPORT() | 通用汇报识别与路由 | 识别汇报类型并路由日报、周报、升级、决策或通用项目汇报 | Draft for testing | P1 |
+| 内部协作 | zayn-report | REPORT() | 通用汇报识别与路由 | 识别汇报类型并路由日报、周报、月报、年中报告、年度报告、升级、决策或通用项目汇报 | Draft for testing | P1 |
 | 内部协作 | zayn-daily-report | DAILY_REPORT() | 日报推进与结果检查 | 区分当天动作与结果，检查状态、等待、下一步和截止时间 | Draft for testing | P1 |
 | 内部协作 | zayn-weekly-report | WEEKLY_REPORT() | 周报复盘与业务推进分析 | 分析一周结果密度、等待、关闭能力与资源分配 | Draft for testing | P1 |
+| 内部协作 | zayn-monthly-report | MONTHLY_REPORT() | 月报复盘与业务结果分析 | 复盘月度目标达成、关键成果、结果密度、等待阻塞和下月重点 | Draft for testing | P1 |
+| 内部协作 | zayn-midyear-report | MIDYEAR_REPORT() | 年中复盘与下半年策略分析 | 复盘半年目标达成、结构性问题、资源配置和下半年策略 | Draft for testing | P1 |
+| 内部协作 | zayn-annual-report | ANNUAL_REPORT() | 年度复盘与下一年度规划 | 复盘年度目标达成、关键成果、业务结构、能力成长和下一年度计划 | Draft for testing | P1 |
+| 内部协作 | zayn-cross-functional-collaboration | CROSS_FUNCTIONAL_COLLABORATION() | 跨部门协同 | 整理跨部门事项中的事实、缺失信息、风险、责任边界、下一步动作和内部沟通版本 | Draft for testing | P1 |
 | 内部协作 | zayn-request | REQUEST() | 内部请求 | 向采购、工程、财务等提出完整请求 | Draft for testing | P3 |
 | 内部协作 | zayn-escalate | ESCALATE() | 问题升级 | 判断问题是否需要升级以及如何汇报 | Draft for testing | P3 |
 | 内部协作 | zayn-decision | DECISION() | 决策请求 | 向领导提供选项、风险和建议 | Draft for testing | P3 |
