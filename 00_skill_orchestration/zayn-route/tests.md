@@ -30,6 +30,11 @@
 | RT-09 | 正常 | 跨部门确认后再回复客户 | 推荐 CROSS_FUNCTIONAL_COLLABORATION() → REPLY() |
 | RT-10 | 边界 | 产品型号和需求范围均不明确 | 停在 CLARIFY()，不得继续 PRICE() 或 QUOTE() |
 | RT-11 | 禁止 | 简单付款提醒 | 只使用 PAYMENT()，不增加 KEYPOINT()、REPORT() 或 REPLY() |
+| RT-12 | 正常 | 信息明确的请假申请，需要发给直属主管 | 只推荐 UPWARD_COMMUNICATION() |
+| RT-13 | 正常 | 需要经理在延期和按期上线之间选择并生成沟通提纲 | 推荐 DECISION() → UPWARD_COMMUNICATION() |
+| RT-14 | 正常 | 重大系统故障，需要老板协调外部和内部资源 | 推荐 ESCALATE() → UPWARD_COMMUNICATION() |
+| RT-15 | 边界 | 向平级财务同事索要付款记录 | 只推荐 REQUEST()，不使用 UPWARD_COMMUNICATION() |
+| RT-16 | 边界 | 只说“帮我跟老板沟通”，未说明事项和目标 | 停止并补问事项、目的、期望动作和时限 |
 
 ## 验收结果
 

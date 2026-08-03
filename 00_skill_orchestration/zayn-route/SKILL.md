@@ -13,7 +13,7 @@ Chinese Name: Skill 路由与编排
 Project: WorkFn
 Author Prefix: zayn
 Category: Skill Orchestration
-Version: 0.1.0
+Version: 0.1.2
 Status: Draft for testing
 ```
 
@@ -43,7 +43,7 @@ ROUTE() 用于解决以下问题：
 7. 用户不确定应该调用哪个 Skill
 8. 需要明确 Skill 调用链和停止条件
 9. 需要在日报、周报、月报、年中报告、年度报告之间选择正确的汇报 Skill
-10. 需要在跨部门协同、内部请求、问题升级和领导决策之间选择正确路径
+10. 需要在跨部门协同、内部请求、问题升级、领导决策和最终上级沟通之间选择正确路径
 
 ## 4. 不适用场景
 
@@ -473,6 +473,32 @@ REPLY()
 REQUEST()
 ```
 
+### 示例九：向经理或老板沟通
+
+如果用户需要把已整理的事实、建议或请求转化为面向直属主管、经理、部门负责人或老板的最终沟通内容，使用：
+
+```text
+UPWARD_COMMUNICATION()
+```
+
+需要先比较方案并请领导拍板时：
+
+```text
+DECISION()
+↓
+UPWARD_COMMUNICATION()
+```
+
+问题超出权限或存在重大风险时：
+
+```text
+ESCALATE()
+↓
+UPWARD_COMMUNICATION()
+```
+
+向平级同事或职能部门提出执行请求仍使用 `REQUEST()`；信息明确的请假、调休、工作安排和普通上级沟通可直接使用 `UPWARD_COMMUNICATION()`。
+
 以上示例只是候选路径，不得无条件套用。
 
 ## 16. 风险检查
@@ -537,7 +563,7 @@ ROUTE() 不得：
 ## 20. 当前状态
 
 ```text
-Version: 0.1.0
+Version: 0.1.2
 Status: Draft for testing
 ```
 
