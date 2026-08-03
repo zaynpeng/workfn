@@ -42,6 +42,8 @@ ROUTE() 用于解决以下问题：
 6. 需要先梳理重点再汇报或决策
 7. 用户不确定应该调用哪个 Skill
 8. 需要明确 Skill 调用链和停止条件
+9. 需要在日报、周报、月报、年中报告、年度报告之间选择正确的汇报 Skill
+10. 需要在跨部门协同、内部请求、问题升级和领导决策之间选择正确路径
 
 ## 4. 不适用场景
 
@@ -443,6 +445,34 @@ REPORT()
 DECISION()
 ```
 
+### 示例七：周期性工作汇报
+
+如果用户已明确周期，优先直接路由到对应专项 Skill：
+
+```text
+DAILY_REPORT() / WEEKLY_REPORT() / MONTHLY_REPORT() / MIDYEAR_REPORT() / ANNUAL_REPORT()
+```
+
+如果用户只说“写个汇报”，但周期、对象或目的不明确，先使用：
+
+```text
+REPORT()
+```
+
+### 示例八：跨部门协同后对外回复
+
+```text
+CROSS_FUNCTIONAL_COLLABORATION()
+↓
+REPLY()
+```
+
+如果只是向内部某部门提出明确问题且无承诺、推责或风险判断，可直接使用：
+
+```text
+REQUEST()
+```
+
 以上示例只是候选路径，不得无条件套用。
 
 ## 16. 风险检查
@@ -510,3 +540,13 @@ ROUTE() 不得：
 Version: 0.1.0
 Status: Draft for testing
 ```
+
+## 21. 通用版与行业版选择
+
+先判断用户材料是否包含行业专属证据，再选择 Skill：
+
+1. 服务器、存储、内存、SSD、GPU、网络设备、笔记本配件、PN、固件或硬件兼容问题使用 `zayn-product-brief`；其他实体产品、数字产品或服务使用 `zayn-general-product-brief`。
+2. 涉及硬件型号、PN、配置兼容、成色、序列号、保修、锁货或二手备件时，使用 `zayn-alternative`、`zayn-availability` 或 `zayn-condition`；其他行业分别使用对应的 `zayn-general-*`。
+3. 涉及硬件工程确认、固件、测试、QC、标签序列号、包装和清关时使用 `zayn-order-kickoff`；普通产品、服务合同或项目启动使用 `zayn-general-order-kickoff`。
+4. 涉及硬件序列号、测试、安装兼容、保修、维修、换货、退运检测或供应商退换窗口时，使用原硬件售后 Skill；一般产品、服务、订阅或项目问题使用对应的 `zayn-general-complaint`、`zayn-general-responsibility`、`zayn-general-rma` 或 `zayn-general-solution`。
+5. 行业证据不足时默认使用通用版，不得仅因用户提到“产品”“库存”“退货”就触发硬件版。

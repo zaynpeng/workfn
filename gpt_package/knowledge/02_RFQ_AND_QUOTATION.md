@@ -177,6 +177,12 @@ Status: Draft for testing
 
 参数完整并满足触发条件时，才可输出正式分析。
 
+## 通用版分流补充
+
+- `zayn-alternative`、`zayn-availability`、`zayn-condition` 专用于硬件、设备、备件和二手产品语境。
+- 非硬件的产品、服务、材料、人员、场地或方案分别使用 `zayn-general-alternative`、`zayn-general-availability`、`zayn-general-condition`。
+- 没有 PN、兼容、成色、序列号、保修或硬件供应证据时，优先选择通用版。
+
 ---
 
 # QUOTE() 报价检查

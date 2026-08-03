@@ -1,6 +1,6 @@
 ---
 name: zayn-product-brief
-description: 基于型号、描述、截图和已有资料，快速整理产品用途、关键规格、版本差异、采购关注点和信息缺口。
+description: 面向服务器、存储、内存、硬盘、SSD、GPU、网络设备和笔记本配件等 IT 硬件，基于型号、PN、标签、截图、Datasheet 和已有资料整理用途、关键规格、版本差异、兼容与采购关注点；当用户需要通用产品或服务速览时改用 zayn-general-product-brief。
 ---
 # PRODUCT_BRIEF() 产品速览
 

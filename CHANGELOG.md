@@ -20,11 +20,13 @@
 - 完成 `COMPLAINT()`、`RESPONSIBILITY()`、`RMA()` 和 `SOLUTION()` 的 `v0.1` 初版规则。
 - 完成客户管理类 `QUALIFY()`、`SEGMENT()`、`PRIORITY()`、`OPPORTUNITY()`、`LOST()`、`REACTIVATE()`、`ACCOUNT()` 初版规则，并合并 `CUSTOMER_PROFILE()` 完整版要求。
 - 完成内部协作类 `REPORT()`、`REQUEST()`、`ESCALATE()`、`DECISION()`、`MEETING()`、`MINUTES()`、`HANDOVER()` 和 `KEYPOINT()` 初版规则。
+- 新增内部协作类 `MONTHLY_REPORT()`、`MIDYEAR_REPORT()` 和 `ANNUAL_REPORT()` 初版规则及完整配套文件，并同步 `REPORT()` 路由。
+- 新增内部协作类 `CROSS_FUNCTIONAL_COLLABORATION()` 跨部门协同 Skill，包含标准配套文件和 references 判断资料。
 - 完成个人生产力类 `REVIEW()`、`FOCUS()`、`LEARN()`、`PLAN()`、`PRACTICE()` 和 `READ()` 初版规则。
 - 合并 `PRODUCT_BRIEF()`、`ALI_RFQ_SCAN()` 和 `ALI_RFQ_BID()` 完整版提示词要求，保留原有详细业务规则。
 - 新增 `ROUTE()` Skill 路由与编排，以及 `00_skill_orchestration` 项目级分类。
 - 为所有 Skill 增加统一的 `zayn-` 正式 Skill ID，并保留原函数式展示名称和中文名称。
 - 将 `REPLY()`、`FOLLOWUP()`、`ALI_RFQ_SCAN()` 和 `ALI_RFQ_BID()` 升级至 `v0.2.0` 最新规则，补充最新参数、最低运行条件、双运行模式、停止条件、职责边界、场景案例和协议测试。
-- 将全部 51 个 Skill 的末级文件夹名称统一为对应的 `zayn-` 正式 Skill ID。
-- 统一修复全部 51 个正式 `SKILL.md` 的 YAML front matter、卡片名称和中文 description，并新增只读检查脚本。
+- 将全部 51 个原有 Skill 的末级文件夹名称统一为对应的 `zayn-` 正式 Skill ID。
+- 统一修复全部 51 个原有正式 `SKILL.md` 的 YAML front matter、卡片名称和中文 description，并新增只读检查脚本。
 - 尚未补充真实案例、测试结果或平台适配。

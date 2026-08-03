@@ -2,18 +2,18 @@
 
 **Skill ID：** `zayn-report`
 
-**版本：** `v0.2.0`
+**版本：** `v0.3.0`
 
 **状态：** Draft for testing
 
 ## 核心用途
 
-识别汇报类型、对象、目的和周期，将日报、周报、升级、决策及会议总结交给对应 Skill；仅为单项目汇报提供有限兜底。
+识别汇报类型、对象、目的和周期，将日报、周报、月报、年中报告、年度报告、升级、决策及会议总结交给对应 Skill；仅为单项目汇报提供有限兜底。
 
 ## 适用与不适用
 
 - 适用：类型不明的汇报、项目进展、需要判断调用哪个汇报 Skill。
-- 不适用：已明确的单日日报或整周周报，应分别使用 `zayn-daily-report`、`zayn-weekly-report`。
+- 不适用：已明确的单日日报、整周周报、月报、年中报告或年度报告，应分别使用对应专项 Skill。
 
 ## 输入要求
 
@@ -25,7 +25,7 @@
 
 ## Skill 关系
 
-关联 `zayn-daily-report`、`zayn-weekly-report`、`zayn-escalate`、`zayn-decision`、`zayn-minutes` 和 `zayn-route`。只允许一个 Skill 生成最终文本。
+关联 `zayn-daily-report`、`zayn-weekly-report`、`zayn-monthly-report`、`zayn-midyear-report`、`zayn-annual-report`、`zayn-escalate`、`zayn-decision`、`zayn-minutes` 和 `zayn-route`。只允许一个 Skill 生成最终文本。
 
 ## 快速示例
 

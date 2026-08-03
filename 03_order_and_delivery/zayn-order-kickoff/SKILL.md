@@ -1,6 +1,6 @@
 ---
 name: zayn-order-kickoff
-description: 在订单确认后，组织采购、工程、质检、包装、物流和财务完成启动确认、责任分配和风险识别。
+description: 面向硬件、设备和备件订单，在订单确认后组织采购、工程、质检、包装、物流和财务核对货源、配置兼容、固件、测试、标签序列号、包装与清关要求，并完成责任分配和风险识别；一般产品、服务或项目启动使用 zayn-general-order-kickoff。
 ---
 # ORDER_KICKOFF() 订单启动协调
 

@@ -41,3 +41,33 @@ COMPLAINT() → RESPONSIBILITY() → RMA() → SOLUTION() → REPLY()
 ## 案例六：避免过度编排
 
 简单付款提醒只使用 PAYMENT()，不增加 KEYPOINT()、REPORT() 或 REPLY()。
+
+## 案例七：明确周期性汇报
+
+输入：
+
+整理本月业务复盘和下月重点。
+
+预期：
+
+只推荐 MONTHLY_REPORT()，不增加 REPORT()。
+
+## 案例八：汇报类型不明
+
+输入：
+
+帮我写个给领导看的汇报。
+
+预期：
+
+先推荐 REPORT() 做汇报类型、对象、目的和周期识别，不直接进入 DAILY_REPORT()、WEEKLY_REPORT()、MONTHLY_REPORT()、MIDYEAR_REPORT() 或 ANNUAL_REPORT()。
+
+## 案例九：跨部门协同后对外回复
+
+输入：
+
+客户希望提前上线，销售想今天回复客户，但设计和技术都还没有确认。
+
+预期：
+
+先推荐 CROSS_FUNCTIONAL_COLLABORATION() 整理内部事实、待确认事项、过早承诺风险和协同文本；只有内部确认后，再进入 REPLY() 生成对外客户回复。

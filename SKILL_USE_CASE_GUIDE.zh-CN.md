@@ -52,16 +52,20 @@ Display Name: ROUTE()
 | `zayn-quote` | `QUOTE()` | 检查报价是否完整、可执行且不会造成误解 | 报价发送前检查产品、数量、价格、币种、条款和有效期 |
 | `zayn-price` | `PRICE()` | 综合成本、客户、市场和风险制定价格策略 | 首次报价、阶梯价格、目标利润、价格有效期和让价空间设计 |
 | `zayn-negotiate` | `NEGOTIATE()` | 判断应该降价、换方案、交换条件还是坚持价格 | 客户压价；竞争对手更低；需要以数量、付款或交期换价格 |
-| `zayn-alternative` | `ALTERNATIVE()` | 判断替代产品是否可行并说明差异和风险 | 原型号缺货、停产、预算不足或需要兼容替代 |
-| `zayn-availability` | `AVAILABILITY()` | 规范库存和货源状态，避免把预计供应说成现货 | 现货确认、调货判断、预计可供、库存来源和有效时间说明 |
-| `zayn-condition` | `CONDITION()` | 判断和规范产品成色表达 | 全新、拆机、翻新、二手、库存品或包装状态说明 |
+| `zayn-alternative` | `ALTERNATIVE()` | 比较硬件、设备、备件和二手产品的替代差异 | 原型号缺货、PN 替代、配置兼容、成色或保修变化 |
+| `zayn-general-alternative` | `GENERAL_ALTERNATIVE()` | 跨行业比较产品、服务或执行方案的替代选项 | 更换材料、服务商、方案、流程或交付方式 |
+| `zayn-availability` | `AVAILABILITY()` | 判断硬件现货、调货、锁货和供应证据 | 硬件库存、成色、照片、SN 和供应商反馈确认 |
+| `zayn-general-availability` | `GENERAL_AVAILABILITY()` | 判断产品、服务、人员、场地或产能是否可用 | 预约、排期、资源确认、部分可用或信息过期 |
+| `zayn-condition` | `CONDITION()` | 判断硬件及二手设备成色 | 全新、拆机、翻新、二手、库存新件及保修状态 |
+| `zayn-general-condition` | `GENERAL_CONDITION()` | 判断任意产品或交付物的状态与质量 | 外观、功能、完整性、检验、缺陷和适用限制 |
 
 ## 03 订单与交付
 
 | Skill ID | Display Name | 解决什么问题 | 典型应用场景 |
 |---|---|---|---|
 | `zayn-order` | `ORDER()` | 下单前检查订单执行条件是否完整 | 核对产品、数量、价格、付款、收货、交期和特殊要求 |
-| `zayn-order-kickoff` | `ORDER_KICKOFF()` | 订单确认后组织内部启动和责任分工 | 销售向采购、工程、QC、仓库和物流交接订单 |
+| `zayn-order-kickoff` | `ORDER_KICKOFF()` | 启动硬件、设备或备件订单 | 协调采购、工程、QC、包装、物流与清关 |
+| `zayn-general-order-kickoff` | `GENERAL_ORDER_KICKOFF()` | 启动通用产品订单、服务合同或项目 | 明确范围、里程碑、验收、依赖、责任和沟通机制 |
 | `zayn-delivery` | `DELIVERY()` | 制定采购、质检、包装和物流交付计划 | 安排里程碑、责任人、截止时间和风险检查点 |
 | `zayn-delay` | `DELAY()` | 识别延期风险并设计补救和客户沟通方案 | 供应商延期、生产延误、物流异常、承诺日期可能无法实现 |
 | `zayn-shipment` | `SHIPMENT()` | 检查发货信息并生成完整发货通知 | 提供箱数、重量、物流方式、单号、文件和预计到达时间 |
@@ -71,10 +75,14 @@ Display Name: ROUTE()
 
 | Skill ID | Display Name | 解决什么问题 | 典型应用场景 |
 |---|---|---|---|
-| `zayn-complaint` | `COMPLAINT()` | 整理客诉事实、证据、影响和待确认事项 | 质量、数量、包装、物流、规格或服务投诉 |
-| `zayn-responsibility` | `RESPONSIBILITY()` | 在事实未确认前判断责任边界 | 客户要求赔偿；供应商和物流责任不清；避免过早承认责任 |
-| `zayn-rma` | `RMA()` | 判断是否接受退回及退换货条件 | 退货、换货、检测、返修、运费承担和退回地址确认 |
-| `zayn-solution` | `SOLUTION()` | 对比维修、换货、退款、补发等售后方案 | 已基本确认事实和责任，需要选择可执行解决方案 |
+| `zayn-complaint` | `COMPLAINT()` | 分析硬件、设备和备件投诉 | 序列号、测试、兼容、运输、安装或保修问题 |
+| `zayn-general-complaint` | `GENERAL_COMPLAINT()` | 分析通用产品、服务或项目投诉 | 结果不符、服务中断、范围争议、交付或体验投诉 |
+| `zayn-responsibility` | `RESPONSIBILITY()` | 判断硬件售后责任边界 | 测试、安装、兼容、运输、保修或供应商责任不清 |
+| `zayn-general-responsibility` | `GENERAL_RESPONSIBILITY()` | 判断通用履约责任边界 | 合同范围、客户配合、第三方依赖或因果关系不清 |
+| `zayn-rma` | `RMA()` | 判断硬件 RMA 与退运检测条件 | 序列号核对、保修、返修、换货、运费和清关 |
+| `zayn-general-rma` | `GENERAL_RMA()` | 判断通用退换、重做、退款或取消请求 | 产品退换、服务重做、项目返工或订阅取消 |
+| `zayn-solution` | `SOLUTION()` | 比较硬件排查、维修、换货和延保方案 | 硬件售后事实和责任基本明确后选择解决方案 |
+| `zayn-general-solution` | `GENERAL_SOLUTION()` | 比较跨行业补救方案 | 修复、重做、退款、抵扣、延期、培训或支持方案 |
 
 ## 05 客户管理与销售策略
 
@@ -94,7 +102,13 @@ Display Name: ROUTE()
 | Skill ID | Display Name | 解决什么问题 | 典型应用场景 |
 |---|---|---|---|
 | `zayn-keypoint` | `KEYPOINT()` | 从大量信息中提炼结论、问题、风险和下一步 | 长聊天记录、项目资料、邮件线程或跨部门信息整理 |
-| `zayn-report` | `REPORT()` | 形成目标明确、证据充分的工作汇报 | 周报、项目进展、销售汇报、异常说明和管理层更新 |
+| `zayn-report` | `REPORT()` | 识别汇报类型并路由到日报、周报、月报、年中报告、年度报告或通用项目汇报 | 不确定该用哪种汇报；项目进展、销售汇报、异常说明和管理层更新 |
+| `zayn-daily-report` | `DAILY_REPORT()` | 将当天记录转为结果、状态、下一步、负责人和期限 | 日报、下班汇报、当天复盘、检查今日哪些事项没有有效推进 |
+| `zayn-weekly-report` | `WEEKLY_REPORT()` | 分析一周结果密度、等待事项、关闭能力和资源分配 | 周报、周会汇报、多份日报汇总、忙但结果少的复盘 |
+| `zayn-monthly-report` | `MONTHLY_REPORT()` | 复盘月度目标达成、关键成果、结果密度、等待阻塞和下月重点 | 月报、月会汇报、月度业务复盘、整月成果与问题分析 |
+| `zayn-midyear-report` | `MIDYEAR_REPORT()` | 复盘上半年目标达成、结构性问题、资源配置和下半年策略 | 年中总结、半年复盘、上半年汇报、下半年计划 |
+| `zayn-annual-report` | `ANNUAL_REPORT()` | 复盘年度目标达成、关键成果、业务结构、能力成长和下一年度计划 | 年度总结、年度述职、全年复盘、年报和明年计划 |
+| `zayn-cross-functional-collaboration` | `CROSS_FUNCTIONAL_COLLABORATION()` | 整理跨部门事项中的事实、待确认信息、风险、责任边界、下一步动作和沟通版本 | 跨部门确认进度、请求补充信息、同步风险阻塞、避免过早承诺或推责表达 |
 | `zayn-request` | `REQUEST()` | 向内部部门提出完整、可执行的请求 | 请求采购核价、工程确认、财务审核或仓库处理 |
 | `zayn-escalate` | `ESCALATE()` | 判断问题是否需要升级以及如何升级 | 超出权限、重大延期、高额损失、客户升级投诉或跨部门阻塞 |
 | `zayn-decision` | `DECISION()` | 向领导提供清晰的决策选项 | 需要审批价格、赔偿、付款条件、资源投入或项目取舍 |
@@ -124,7 +138,8 @@ Display Name: ROUTE()
 
 | Skill ID | Display Name | 解决什么问题 | 典型应用场景 |
 |---|---|---|---|
-| `zayn-product-brief` | `PRODUCT_BRIEF()` | 快速理解陌生产品及其采购关注点 | 根据型号、描述、截图或资料整理用途、关键规格、风险和信息缺口 |
+| `zayn-product-brief` | `PRODUCT_BRIEF()` | 快速理解 IT 硬件及其采购关注点 | 服务器、存储、内存、SSD、GPU、网络设备和笔记本配件 |
+| `zayn-general-product-brief` | `GENERAL_PRODUCT_BRIEF()` | 快速理解任意产品或服务 | 实体产品、数字产品、服务、订阅或组合方案的用途与信息缺口 |
 
 ## 常见问题快速入口
 
@@ -146,6 +161,12 @@ Display Name: ROUTE()
 | 判断是否接受退货 | `RMA()` |
 | 今天先跟进哪些客户 | `PRIORITY()` |
 | 给领导汇报复杂项目 | `KEYPOINT()` → `REPORT()` |
+| 写日报或下班总结 | `DAILY_REPORT()` |
+| 写周报或周会汇报 | `WEEKLY_REPORT()` |
+| 写月报或月度复盘 | `MONTHLY_REPORT()` |
+| 写年中总结和下半年计划 | `MIDYEAR_REPORT()` |
+| 写年度述职或明年计划 | `ANNUAL_REPORT()` |
+| 跨部门协同推进、避免过早承诺或推责 | `CROSS_FUNCTIONAL_COLLABORATION()` |
 | 需要领导做决定 | `DECISION()` |
 | 任务太复杂、不知道怎么开始 | `FOCUS()` → `PLAN()` |
 | 陌生产品需要快速理解 | `PRODUCT_BRIEF()` |
@@ -194,6 +215,18 @@ ORDER() → ORDER_KICKOFF() → DELIVERY()
 
 ```text
 KEYPOINT() → REPORT() → DECISION()
+```
+
+### 跨部门协同后对外回复
+
+```text
+CROSS_FUNCTIONAL_COLLABORATION() → REPLY()
+```
+
+### 周期性工作汇报
+
+```text
+REPORT() → DAILY_REPORT() / WEEKLY_REPORT() / MONTHLY_REPORT() / MIDYEAR_REPORT() / ANNUAL_REPORT()
 ```
 
 ### Alibaba RFQ

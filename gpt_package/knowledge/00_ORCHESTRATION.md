@@ -44,6 +44,8 @@ ROUTE() 用于解决以下问题：
 6. 需要先梳理重点再汇报或决策
 7. 用户不确定应该调用哪个 Skill
 8. 需要明确 Skill 调用链和停止条件
+9. 需要在日报、周报、月报、年中报告、年度报告之间选择正确的汇报 Skill
+10. 需要在跨部门协同、内部请求、问题升级和领导决策之间选择正确路径
 
 ## 4. 不适用场景
 
@@ -443,6 +445,34 @@ KEYPOINT()
 REPORT()
 ↓
 DECISION()
+```
+
+### 示例七：周期性工作汇报
+
+如果用户已明确周期，优先直接路由到对应专项 Skill：
+
+```text
+DAILY_REPORT() / WEEKLY_REPORT() / MONTHLY_REPORT() / MIDYEAR_REPORT() / ANNUAL_REPORT()
+```
+
+如果用户只说“写个汇报”，但周期、对象或目的不明确，先使用：
+
+```text
+REPORT()
+```
+
+### 示例八：跨部门协同后对外回复
+
+```text
+CROSS_FUNCTIONAL_COLLABORATION()
+↓
+REPLY()
+```
+
+如果只是向内部某部门提出明确问题且无承诺、推责或风险判断，可直接使用：
+
+```text
+REQUEST()
 ```
 
 以上示例只是候选路径，不得无条件套用。
