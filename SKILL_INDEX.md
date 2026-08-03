@@ -54,6 +54,7 @@
 | 内部协作 | zayn-request | REQUEST() | 内部请求 | 向采购、工程、财务等提出完整请求 | Draft for testing | P3 |
 | 内部协作 | zayn-escalate | ESCALATE() | 问题升级 | 判断问题是否需要升级以及如何汇报 | Draft for testing | P3 |
 | 内部协作 | zayn-decision | DECISION() | 决策请求 | 向领导提供选项、风险和建议 | Draft for testing | P3 |
+| 内部协作 | zayn-upward-communication | UPWARD_COMMUNICATION() | 上级沟通与管理沟通 | 面向不同岗位生成汇报、请示、审批、升级、资源申请、个人事项和意见反馈内容 | Draft for testing | P1 |
 | 内部协作 | zayn-meeting | MEETING() | 会议准备 | 会前整理目标、议题、数据和结论 | Draft for testing | P3 |
 | 内部协作 | zayn-minutes | MINUTES() | 会议纪要 | 整理结论、责任人、截止时间和待确认事项 | Draft for testing | P3 |
 | 内部协作 | zayn-handover | HANDOVER() | 工作交接 | 将事项、状态、责任和下一步完整移交 | Draft for testing | P3 |

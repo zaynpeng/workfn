@@ -6,8 +6,8 @@
 
 ## 已完成
 
-- 当前共有 10 个编号分类和 66 个已登记 Skill。
-- 每个 Skill 建立 5 个标准 Markdown 文件。
+- 当前共有 10 个编号分类和 67 个已登记 Skill。
+- 每个 Skill 建立 `README.md`、`SKILL.md`、`examples.md`、`tests.md` 和 `changelog.md` 5 个标准 Markdown 文件；需要时增加 `agents/openai.yaml` 和运行参考文件。
 - 建立项目索引、开发规范、贡献规范、发布准备说明、许可证选择说明和平台适配占位。
 - `REPLY()` 已升级至 `v0.2.0` 测试规范，包含最新必填参数、双运行模式、停止条件、职责边界和正式输出结构。
 - `FOLLOWUP()` 已升级至 `v0.2.0` 测试规范，包含最新跟进输入、双运行模式、停止条件、职责边界和正式输出结构。
@@ -26,6 +26,7 @@
 - 已按专用提示词完成 `REPORT()`、`REQUEST()`、`ESCALATE()`、`DECISION()`、`MEETING()`、`MINUTES()`、`HANDOVER()` 和 `KEYPOINT()` 的 `v0.1` 初版规则。
 - 已新增 `MONTHLY_REPORT()`、`MIDYEAR_REPORT()` 和 `ANNUAL_REPORT()` 三个周期性汇报 Skill，并同步 `REPORT()` 路由规则。
 - 已新增 `CROSS_FUNCTIONAL_COLLABORATION()` 跨部门协同 Skill，覆盖事实、承诺、推责、推进和信息不足判断。
+- 已新增 `UPWARD_COMMUNICATION()` 上级沟通与管理沟通 Skill，覆盖跨岗位汇报、请示、审批、升级、资源申请、个人事项和意见反馈。
 - 已按专用提示词完成 `REVIEW()`、`FOCUS()`、`LEARN()`、`PLAN()`、`PRACTICE()` 和 `READ()` 的 `v0.1` 初版规则。
 - 已合并 `PRODUCT_BRIEF()`、`ALI_RFQ_SCAN()` 和 `ALI_RFQ_BID()` 完整版提示词要求，并保留原有更详细的业务规则。
 - 已新增 `ROUTE()` Skill 路由与编排初版规则。
