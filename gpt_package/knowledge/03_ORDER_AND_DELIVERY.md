@@ -176,6 +176,11 @@ Status: Draft for testing
 
 参数完整并满足触发条件时才可输出正式分析。
 
+## 通用订单启动分流补充
+
+- `zayn-order-kickoff` 用于需要硬件配置、固件、测试、QC、序列号、包装或清关确认的订单。
+- `zayn-general-order-kickoff` 用于一般产品订单、服务合同或项目启动，重点处理范围、里程碑、验收、依赖和责任分工。
+
 ---
 
 # ORDER_KICKOFF() 订单启动协调

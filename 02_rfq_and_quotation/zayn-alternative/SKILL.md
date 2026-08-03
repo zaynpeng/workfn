@@ -1,6 +1,6 @@
 ---
 name: zayn-alternative
-description: 在原型号、配置、品牌、成色、价格或交期无法满足时，对候选替代方案的差异、风险和确认边界进行比较。
+description: 面向硬件、设备、备件和二手产品，在原型号、PN、配置、品牌、成色、价格或交期无法满足时比较候选替代品的兼容差异、供应风险和确认边界；其他行业的产品、服务或方案替代使用 zayn-general-alternative。
 ---
 # ALTERNATIVE() 替代方案
 

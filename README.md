@@ -40,7 +40,7 @@ To configure WorkFn as a custom GPT in ChatGPT, see the [WorkFn Custom GPT Packa
 
 ## Repository structure
 
-- Ten numbered categories contain 55 indexed Skills.
+- Ten numbered categories contain 66 indexed Skills.
 - The project-level orchestration Skill is stored under `00_skill_orchestration/zayn-route/`.
 - Alibaba-specific Skills are stored under `08_platform_specific/alibaba/`.
 - Product Intelligence is stored under `09_product_intelligence/`.

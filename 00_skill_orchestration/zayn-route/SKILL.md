@@ -540,3 +540,13 @@ ROUTE() 不得：
 Version: 0.1.0
 Status: Draft for testing
 ```
+
+## 21. 通用版与行业版选择
+
+先判断用户材料是否包含行业专属证据，再选择 Skill：
+
+1. 服务器、存储、内存、SSD、GPU、网络设备、笔记本配件、PN、固件或硬件兼容问题使用 `zayn-product-brief`；其他实体产品、数字产品或服务使用 `zayn-general-product-brief`。
+2. 涉及硬件型号、PN、配置兼容、成色、序列号、保修、锁货或二手备件时，使用 `zayn-alternative`、`zayn-availability` 或 `zayn-condition`；其他行业分别使用对应的 `zayn-general-*`。
+3. 涉及硬件工程确认、固件、测试、QC、标签序列号、包装和清关时使用 `zayn-order-kickoff`；普通产品、服务合同或项目启动使用 `zayn-general-order-kickoff`。
+4. 涉及硬件序列号、测试、安装兼容、保修、维修、换货、退运检测或供应商退换窗口时，使用原硬件售后 Skill；一般产品、服务、订阅或项目问题使用对应的 `zayn-general-complaint`、`zayn-general-responsibility`、`zayn-general-rma` 或 `zayn-general-solution`。
+5. 行业证据不足时默认使用通用版，不得仅因用户提到“产品”“库存”“退货”就触发硬件版。

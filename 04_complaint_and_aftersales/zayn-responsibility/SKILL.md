@@ -1,6 +1,6 @@
 ---
 name: zayn-responsibility
-description: 区分客户陈述、已确认事实、合同与保修边界以及当前责任状态，避免在证据不足时过早认责。
+description: 面向硬件、设备、备件和二手产品售后，依据订单、序列号、测试、兼容性、运输安装、合同和保修边界判断当前责任状态，避免证据不足时过早认责；一般产品、服务或项目责任判断使用 zayn-general-responsibility。
 ---
 # RESPONSIBILITY() 责任边界
 

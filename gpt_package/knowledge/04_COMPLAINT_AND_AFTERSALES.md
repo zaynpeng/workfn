@@ -188,6 +188,12 @@ Status: Draft for testing
 
 参数完整并满足触发条件时才可输出正式分析。
 
+## 通用版与硬件版分流补充
+
+- 原 `zayn-complaint`、`zayn-responsibility`、`zayn-rma`、`zayn-solution` 用于包含硬件型号、序列号、测试、兼容、运输安装、保修、维修或退运检测的售后问题。
+- 一般产品、服务、订阅和项目投诉分别使用 `zayn-general-complaint`、`zayn-general-responsibility`、`zayn-general-rma`、`zayn-general-solution`。
+- 行业证据不足时优先使用通用版，不得把服务补救强行转换为硬件 RMA。
+
 ---
 
 # RESPONSIBILITY() 责任边界

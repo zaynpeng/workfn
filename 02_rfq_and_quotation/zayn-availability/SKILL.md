@@ -1,6 +1,6 @@
 ---
 name: zayn-availability
-description: 区分现货、可调货、预计可供、待锁货和信息过期等货源状态，并给出可对外使用的库存表述。
+description: 面向硬件、设备、备件和二手产品，区分已确认现货、可调货、预计可供、供应商口头反馈、待锁货和信息过期等货源状态，并结合成色、照片或序列号给出可对外使用的库存表述；通用资源或服务可用性使用 zayn-general-availability。
 ---
 # AVAILABILITY() 货源与库存判断
 
