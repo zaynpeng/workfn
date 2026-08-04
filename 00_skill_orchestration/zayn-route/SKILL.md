@@ -13,7 +13,7 @@ Chinese Name: Skill 路由与编排
 Project: WorkFn
 Author Prefix: zayn
 Category: Skill Orchestration
-Version: 0.1.3
+Version: 0.1.4
 Status: Draft for testing
 ```
 
@@ -535,7 +535,23 @@ PRODUCT_SELECTION()
 
 ### 示例十二：商业情报停止条件
 
-公司同名主体无法区分时，停在 `COMPANY_RESEARCH()`；司法辖区不明时，不进入 `BUSINESS_RISK()`；市场地区、产品边界或时间范围不明时，停在 `MARKET_RESEARCH()` 补问；没有我方供应、资金和交付条件时，不进入正式 `PRODUCT_SELECTION()`。
+公司同名主体无法区分时，停在 `COMPANY_RESEARCH()`；司法辖区不明时，不进入 `BUSINESS_RISK()`；账户监测缺少上次检查时间时，`ACCOUNT_WATCH()` 只能执行基线或近期扫描，不得声称发现新增动态；市场地区、产品边界或时间范围不明时，停在 `MARKET_RESEARCH()` 补问；没有我方供应、资金和交付条件时，不进入正式 `PRODUCT_SELECTION()`。
+
+### 示例十三：客户动态到对外跟进
+
+已有明确客户主体、官方来源、我方业务背景和上次检查时间，需要判断新动态是否值得行动：
+
+```text
+ACCOUNT_WATCH()
+↓
+OPPORTUNITY()
+↓
+FOLLOWUP()
+↓
+REPLY()
+```
+
+如果只需要扫描、分类和保存账户动态，单独使用 `ACCOUNT_WATCH()`。只有出现明确项目、需求、预算、时间或采购角色线索时，才进入 `OPPORTUNITY()`；只有动作已经确定且用户要求最终表达时，才进入 `REPLY()`。招聘、参展、普通转发或节日内容不得直接触发完整调用链。
 
 以上示例只是候选路径，不得无条件套用。
 
@@ -605,7 +621,7 @@ ROUTE() 不得：
 ## 20. 当前状态
 
 ```text
-Version: 0.1.3
+Version: 0.1.4
 Status: Draft for testing
 ```
 
@@ -624,8 +640,10 @@ Status: Draft for testing
 1. 调查企业公开主体、业务、团队、认证和经营信号，使用 `zayn-company-research`；历史询价、订单、付款和售后仍使用 `zayn-customer-profile`。
 2. 调查诉讼、处罚、制裁、出口管制、信用和其他合作风险信号，使用 `zayn-business-risk`；主体或司法辖区不明确时停止。
 3. 分析社媒、新闻、论坛、客户评论和员工评价，使用 `zayn-social-listening`；单条或匿名评论不得升级为整体结论。
-4. 已有公司、风险和业务资料，需要判断与我方能力是否匹配，使用 `zayn-company-fit`；是否值得继续投入由 `zayn-qualify` 判断。
-5. 将具体竞争对手与我方比较，使用 `zayn-competitor-analysis`；调查单一企业基本信息时使用 `zayn-company-research`。
-6. 研究行业、地区、客户、产业链、需求、供应、监管和竞争格局，使用 `zayn-market-research`。
-7. 已有市场证据和候选产品，需要结合供应、资金、库存、利润、物流和售后能力判断进入机会，使用 `zayn-product-selection`。
-8. 市场情报调用中必须保留主体、来源、日期、事实/推断状态和信息缺口；不得因搜索不到而输出不存在或无风险。
+4. 持续检查某一已确认账户相对历史状态的公开变化、判断信号和行动价值，使用 `zayn-account-watch`；无上次检查时间时只做基线或近期扫描。一次性企业背景调查仍使用 `zayn-company-research`，阶段性舆情分析仍使用 `zayn-social-listening`。
+5. 已有公司、风险和业务资料，需要判断与我方能力是否匹配，使用 `zayn-company-fit`；是否值得继续投入由 `zayn-qualify` 判断。
+6. 将具体竞争对手与我方比较，使用 `zayn-competitor-analysis`；调查单一企业基本信息时使用 `zayn-company-research`。
+7. 研究行业、地区、客户、产业链、需求、供应、监管和竞争格局，使用 `zayn-market-research`。
+8. 已有市场证据和候选产品，需要结合供应、资金、库存、利润、物流和售后能力判断进入机会，使用 `zayn-product-selection`。
+9. `ACCOUNT_WATCH()` 只把已确认项目、需求、时间窗口、来源和信息缺口传给 `OPPORTUNITY()`；不要把招聘、参展或弱信号直接传成采购需求，也不要自行生成最终回复。
+10. 市场情报调用中必须保留主体、来源、日期、事实/推断状态和信息缺口；不得因搜索不到而输出不存在或无风险。

@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.1.4
+
+1. 新增 `ACCOUNT_WATCH()` 客户动态跟踪与商机信号分析路由。
+2. 建立与 `COMPANY_RESEARCH()`、`SOCIAL_LISTENING()`、`OPPORTUNITY()`、`FOLLOWUP()` 和 `REPLY()` 的职责边界。
+3. 增加账户动态单 Skill 路由及 ACCOUNT_WATCH → OPPORTUNITY → FOLLOWUP → REPLY 分阶段链路。
+4. 增加无历史基线、招聘、参展和弱信号不得升级为明确商机的停止条件。
+5. 新增 4 个路由示例和 4 个测试案例。
+
 ## v0.1.3
 
 1. 新增 7 个市场与商业情报 Skill 的选择和编排规则。
