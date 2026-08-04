@@ -42,6 +42,10 @@
 | RT-21 | 边界 | 市场范围和时间不明确 | 停在 MARKET_RESEARCH() 补问，不输出规模或进入建议 |
 | RT-22 | 单 Skill | 已有研究和候选产品，只需判断验证优先级 | 只推荐 PRODUCT_SELECTION() |
 | RT-23 | 边界 | 只有一条匿名差评 | SOCIAL_LISTENING() 标记线索，不进入重大风险结论 |
+| RT-24 | 单 Skill | 有主体、来源和历史状态，只需扫描客户变化并更新监测状态 | 只推荐 ACCOUNT_WATCH() |
+| RT-25 | 正常 | 客户公开新项目，需要判断机会、安排跟进并生成消息 | ACCOUNT_WATCH() → OPPORTUNITY() → FOLLOWUP() → REPLY() |
+| RT-26 | 边界 | 第一次监测且无上次检查时间 | ACCOUNT_WATCH() 只做基线或近期扫描，不得声称新增 |
+| RT-27 | 禁止 | 客户招聘采购岗位并参展，但无项目或需求证据 | ACCOUNT_WATCH() 标记线索，不直接进入 OPPORTUNITY() 或 REPLY() |
 
 ## 验收结果
 
