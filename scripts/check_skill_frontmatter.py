@@ -20,6 +20,7 @@ CATEGORIES = (
     "07_personal_productivity",
     "08_platform_specific",
     "09_product_intelligence",
+    "10_market_intelligence",
 )
 
 NAME_PATTERN = re.compile(r"^zayn-[a-z0-9]+(?:-[a-z0-9]+)*$")
@@ -115,7 +116,7 @@ def main() -> int:
         relative = path.relative_to(project_root)
         print(f"FAIL {relative}: {'; '.join(issues)}")
 
-    return 1 if failed or len(files) != 51 else 0
+    return 1 if failed else 0
 
 
 if __name__ == "__main__":

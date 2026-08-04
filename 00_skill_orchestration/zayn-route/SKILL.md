@@ -1,6 +1,6 @@
 ---
 name: zayn-route
-description: 分析复杂职场问题，判断应先使用哪个 Skill，并规划调用顺序、参数传递、停止条件和最终输出 Skill。
+description: 分析复杂职场问题，判断应先使用哪个 Skill，并规划调用顺序、参数传递、停止条件和最终输出 Skill；覆盖客户、报价、订单、售后、内部协作、市场与商业情报等场景，并在主体、来源、时间或研究边界不足时停止后续分析。
 ---
 # ROUTE() Skill 路由与编排
 
@@ -13,7 +13,7 @@ Chinese Name: Skill 路由与编排
 Project: WorkFn
 Author Prefix: zayn
 Category: Skill Orchestration
-Version: 0.1.2
+Version: 0.1.3
 Status: Draft for testing
 ```
 
@@ -44,6 +44,7 @@ ROUTE() 用于解决以下问题：
 8. 需要明确 Skill 调用链和停止条件
 9. 需要在日报、周报、月报、年中报告、年度报告之间选择正确的汇报 Skill
 10. 需要在跨部门协同、内部请求、问题升级、领导决策和最终上级沟通之间选择正确路径
+11. 需要在企业公开调查、合作风险、舆情、匹配度、竞争、市场研究和选品之间选择正确路径
 
 ## 4. 不适用场景
 
@@ -116,6 +117,7 @@ ROUTE() 必须先判断当前问题属于哪一种或哪几种类型：
 6. 沟通
 7. 跟踪
 8. 复盘
+9. 研究
 
 示例：
 
@@ -279,6 +281,10 @@ ROUTE() 必须为每个调用链设置停止条件。
 7. 用户目标发生变化
 8. 当前证据不足
 9. 后续 Skill 不具备最低运行条件
+10. 企业主体或官方账号无法确认
+11. 国家、司法辖区、市场、客户群或时间范围不明确
+12. 关键结论只有单一低质量来源
+13. 实时数据源不可访问且用户未提供资料
 
 停止时必须明确说明：
 
@@ -499,6 +505,38 @@ UPWARD_COMMUNICATION()
 
 向平级同事或职能部门提出执行请求仍使用 `REQUEST()`；信息明确的请假、调休、工作安排和普通上级沟通可直接使用 `UPWARD_COMMUNICATION()`。
 
+### 示例十：潜在客户公开调查与匹配
+
+先确认公开主体和经营信号：
+
+```text
+COMPANY_RESEARCH()
+↓
+BUSINESS_RISK()
+↓
+SOCIAL_LISTENING()
+↓
+COMPANY_FIT()
+```
+
+只有需要继续判断业务投入时，才把匹配结果传给 `QUALIFY()`；优先级和客户策略属于后续阶段，不应一次性强行串联全部 Skill。内部询价、订单、付款和售后历史由 `CUSTOMER_PROFILE()` 提供，不让 `COMPANY_RESEARCH()` 重复处理。
+
+### 示例十一：行业研究到选品
+
+```text
+MARKET_RESEARCH()
+↓
+COMPETITOR_ANALYSIS()
+↓
+PRODUCT_SELECTION()
+```
+
+只有候选产品已经形成且需要判断真实项目时，再进入 `OPPORTUNITY()`。如果用户只要求调查某个竞争对手，可直接使用 `COMPETITOR_ANALYSIS()`；如果只要求判断已有候选产品，可直接使用 `PRODUCT_SELECTION()`。
+
+### 示例十二：商业情报停止条件
+
+公司同名主体无法区分时，停在 `COMPANY_RESEARCH()`；司法辖区不明时，不进入 `BUSINESS_RISK()`；市场地区、产品边界或时间范围不明时，停在 `MARKET_RESEARCH()` 补问；没有我方供应、资金和交付条件时，不进入正式 `PRODUCT_SELECTION()`。
+
 以上示例只是候选路径，不得无条件套用。
 
 ## 16. 风险检查
@@ -515,6 +553,10 @@ UPWARD_COMMUNICATION()
 8. 是否忽略用户已指定的 Skill
 9. 是否忽略已有 Skill 输出
 10. 是否重复询问已经提供的信息
+11. 是否在主体未确认时继续归因
+12. 是否把“未找到”传成“不存在”
+13. 是否将官网自述或匿名评论传成已确认事实
+14. 是否把过期研究数据当作当前状态
 
 ## 17. 禁止事项
 
@@ -563,7 +605,7 @@ ROUTE() 不得：
 ## 20. 当前状态
 
 ```text
-Version: 0.1.2
+Version: 0.1.3
 Status: Draft for testing
 ```
 
@@ -576,3 +618,14 @@ Status: Draft for testing
 3. 涉及硬件工程确认、固件、测试、QC、标签序列号、包装和清关时使用 `zayn-order-kickoff`；普通产品、服务合同或项目启动使用 `zayn-general-order-kickoff`。
 4. 涉及硬件序列号、测试、安装兼容、保修、维修、换货、退运检测或供应商退换窗口时，使用原硬件售后 Skill；一般产品、服务、订阅或项目问题使用对应的 `zayn-general-complaint`、`zayn-general-responsibility`、`zayn-general-rma` 或 `zayn-general-solution`。
 5. 行业证据不足时默认使用通用版，不得仅因用户提到“产品”“库存”“退货”就触发硬件版。
+
+## 22. 市场与商业情报选择
+
+1. 调查企业公开主体、业务、团队、认证和经营信号，使用 `zayn-company-research`；历史询价、订单、付款和售后仍使用 `zayn-customer-profile`。
+2. 调查诉讼、处罚、制裁、出口管制、信用和其他合作风险信号，使用 `zayn-business-risk`；主体或司法辖区不明确时停止。
+3. 分析社媒、新闻、论坛、客户评论和员工评价，使用 `zayn-social-listening`；单条或匿名评论不得升级为整体结论。
+4. 已有公司、风险和业务资料，需要判断与我方能力是否匹配，使用 `zayn-company-fit`；是否值得继续投入由 `zayn-qualify` 判断。
+5. 将具体竞争对手与我方比较，使用 `zayn-competitor-analysis`；调查单一企业基本信息时使用 `zayn-company-research`。
+6. 研究行业、地区、客户、产业链、需求、供应、监管和竞争格局，使用 `zayn-market-research`。
+7. 已有市场证据和候选产品，需要结合供应、资金、库存、利润、物流和售后能力判断进入机会，使用 `zayn-product-selection`。
+8. 市场情报调用中必须保留主体、来源、日期、事实/推断状态和信息缺口；不得因搜索不到而输出不存在或无风险。
