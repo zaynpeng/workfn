@@ -115,3 +115,27 @@ ESCALATE() → UPWARD_COMMUNICATION()
 预期：
 
 只推荐 REQUEST()。沟通对象是平级职能部门且请求明确，不使用 UPWARD_COMMUNICATION()。
+
+## 案例十四：潜在客户公开调查与匹配
+
+输入：调查一家德国潜在客户的公开背景、合作风险和匹配程度。
+
+预期路径：COMPANY_RESEARCH() → BUSINESS_RISK() → COMPANY_FIT()。只有用户还要求判断投入价值时，才继续 QUALIFY()。
+
+## 案例十五：竞争市场到选品
+
+输入：研究德国服务器备件市场，比较主要对手，并评估三个候选产品。
+
+预期路径：MARKET_RESEARCH() → COMPETITOR_ANALYSIS() → PRODUCT_SELECTION()。
+
+## 案例十六：主体冲突应停止
+
+输入：调查 ABC Ltd，但未提供国家、域名或注册号，搜索结果存在多个同名主体。
+
+预期：停在 COMPANY_RESEARCH()，请求主体识别线索，不进入 BUSINESS_RISK()。
+
+## 案例十七：已有候选产品直接评估
+
+输入：已有市场资料和三个候选产品，希望结合供应、资金、物流和售后能力决定先验证哪个。
+
+预期：只推荐 PRODUCT_SELECTION()，不重复调用 MARKET_RESEARCH()。

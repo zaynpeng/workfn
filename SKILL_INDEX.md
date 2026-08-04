@@ -69,3 +69,10 @@
 | 平台专用 / Alibaba | zayn-ali-rfq-bid | ALI_RFQ_BID() | 阿里 RFQ 报价 | 将已确认的产品、价格和条款整理为 Alibaba RFQ 报价表单内容 | Draft for testing | P3 |
 | 产品理解与技术判断 / IT 硬件 | zayn-product-brief | PRODUCT_BRIEF() | IT 硬件产品速览 | 整理服务器、存储、GPU、网络设备等硬件的型号、PN、规格、兼容与采购风险 | Draft for testing | P1 |
 | 产品理解与技术判断 / 通用 | zayn-general-product-brief | GENERAL_PRODUCT_BRIEF() | 通用产品与服务速览 | 整理实体产品、数字产品或服务的用途、能力、版本和信息缺口 | Draft for testing | P1 |
+| 市场与商业情报 | zayn-company-research | COMPANY_RESEARCH() | 企业公开信息调查 | 确认企业主体并调查公开背景、业务、规模信号、团队、认证和近期动态 | Draft for testing | P1 |
+| 市场与商业情报 | zayn-business-risk | BUSINESS_RISK() | 企业合作风险调查 | 调查诉讼、处罚、制裁、出口管制、信用和其他公开合作风险信号 | Draft for testing | P1 |
+| 市场与商业情报 | zayn-social-listening | SOCIAL_LISTENING() | 社媒与网络舆情分析 | 分析社媒、新闻、论坛、客户评论和员工评价中的公开信号及样本限制 | Draft for testing | P2 |
+| 市场与商业情报 | zayn-company-fit | COMPANY_FIT() | 潜在客户匹配度分析 | 结合企业研究、合作风险、业务证据和我方能力判断合作匹配程度 | Draft for testing | P1 |
+| 市场与商业情报 | zayn-competitor-analysis | COMPETITOR_ANALYSIS() | 竞争对手分析 | 以公开证据比较竞争重叠、优势、弱点、威胁和差异化机会 | Draft for testing | P2 |
+| 市场与商业情报 | zayn-market-research | MARKET_RESEARCH() | 行业与市场调研 | 在明确行业、地区、客户和时间范围内研究市场结构、趋势、机会与风险 | Draft for testing | P1 |
+| 市场与商业情报 | zayn-product-selection | PRODUCT_SELECTION() | 市场选品与机会评估 | 结合市场需求、供应、资金、库存、利润、物流和售后风险评估候选产品 | Draft for testing | P2 |

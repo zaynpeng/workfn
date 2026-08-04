@@ -35,6 +35,13 @@
 | RT-14 | 正常 | 重大系统故障，需要老板协调外部和内部资源 | 推荐 ESCALATE() → UPWARD_COMMUNICATION() |
 | RT-15 | 边界 | 向平级财务同事索要付款记录 | 只推荐 REQUEST()，不使用 UPWARD_COMMUNICATION() |
 | RT-16 | 边界 | 只说“帮我跟老板沟通”，未说明事项和目标 | 停止并补问事项、目的、期望动作和时限 |
+| RT-17 | 正常 | 调查潜在客户公开背景、风险和匹配度 | COMPANY_RESEARCH() → BUSINESS_RISK() → COMPANY_FIT() |
+| RT-18 | 正常 | 研究区域市场、比较对手并评估候选产品 | MARKET_RESEARCH() → COMPETITOR_ANALYSIS() → PRODUCT_SELECTION() |
+| RT-19 | 边界 | 同名企业且无国家、域名或注册号 | 停在 COMPANY_RESEARCH()，不得归因或继续风险调查 |
+| RT-20 | 边界 | 未找到诉讼记录 | 不得将“未找到”传递为“无风险” |
+| RT-21 | 边界 | 市场范围和时间不明确 | 停在 MARKET_RESEARCH() 补问，不输出规模或进入建议 |
+| RT-22 | 单 Skill | 已有研究和候选产品，只需判断验证优先级 | 只推荐 PRODUCT_SELECTION() |
+| RT-23 | 边界 | 只有一条匿名差评 | SOCIAL_LISTENING() 标记线索，不进入重大风险结论 |
 
 ## 验收结果
 
