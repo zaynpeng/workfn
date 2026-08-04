@@ -72,6 +72,7 @@
 | 市场与商业情报 | zayn-company-research | COMPANY_RESEARCH() | 企业公开信息调查 | 确认企业主体并调查公开背景、业务、规模信号、团队、认证和近期动态 | Draft for testing | P1 |
 | 市场与商业情报 | zayn-business-risk | BUSINESS_RISK() | 企业合作风险调查 | 调查诉讼、处罚、制裁、出口管制、信用和其他公开合作风险信号 | Draft for testing | P1 |
 | 市场与商业情报 | zayn-social-listening | SOCIAL_LISTENING() | 社媒与网络舆情分析 | 分析社媒、新闻、论坛、客户评论和员工评价中的公开信号及样本限制 | Draft for testing | P2 |
+| 市场与商业情报 | zayn-account-watch | ACCOUNT_WATCH() | 客户动态跟踪与商机信号分析 | 持续发现重点账户的公开新增动态，区分信号、判断行动价值并维护去重和处理状态 | Draft for testing | P1 |
 | 市场与商业情报 | zayn-company-fit | COMPANY_FIT() | 潜在客户匹配度分析 | 结合企业研究、合作风险、业务证据和我方能力判断合作匹配程度 | Draft for testing | P1 |
 | 市场与商业情报 | zayn-competitor-analysis | COMPETITOR_ANALYSIS() | 竞争对手分析 | 以公开证据比较竞争重叠、优势、弱点、威胁和差异化机会 | Draft for testing | P2 |
 | 市场与商业情报 | zayn-market-research | MARKET_RESEARCH() | 行业与市场调研 | 在明确行业、地区、客户和时间范围内研究市场结构、趋势、机会与风险 | Draft for testing | P1 |
