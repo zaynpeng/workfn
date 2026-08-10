@@ -12,7 +12,7 @@ Every WorkFn Skill first performs parameter parsing and completeness checks. A S
 
 ## Naming
 
-Skills use uppercase function-style display names such as `REPLY()`, `RFQ()`, and `FOLLOWUP()`. Each leaf Skill directory matches its formal Skill ID, such as `zayn-reply`, `zayn-rfq`, and `zayn-followup`.
+Skills use the same lowercase `zayn-*` value for the leaf directory, formal Skill ID, and UI display name, such as `zayn-reply`, `zayn-rfq`, and `zayn-followup`.
 
 Each WorkFn Skill has a unique publishable Skill ID using the `zayn-` prefix.
 
@@ -21,7 +21,7 @@ Every formal `SKILL.md` must start with YAML front matter containing `name` and 
 Example:
 
 - Skill ID: `zayn-reply`
-- Display Name: `REPLY()`
+- Display Name: `zayn-reply`
 - Chinese Name: 客户回复
 
 The Skill ID is intended for publishing and brand identification. This does not claim compatibility with any specific platform. Leaf Skill directory names now match their formal `zayn-` Skill IDs.
@@ -40,7 +40,7 @@ To configure WorkFn as a custom GPT in ChatGPT, see the [WorkFn Custom GPT Packa
 
 ## Repository structure
 
-- Ten numbered categories contain 67 indexed Skills.
+- Twelve numbered categories contain 81 indexed Skills.
 - The project-level orchestration Skill is stored under `00_skill_orchestration/zayn-route/`.
 - Alibaba-specific Skills are stored under `08_platform_specific/alibaba/`.
 - Product Intelligence is stored under `09_product_intelligence/`.

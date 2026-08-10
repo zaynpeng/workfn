@@ -10,14 +10,14 @@ WorkFn 是一组职责明确、可以分别调用的职场 Skill。它把判断�
 
 WorkFn 中的每个 Skill 都先执行参数解析和完整度检查。Skill 不会直接生成答案，而会先判断用户已经提供哪些参数、缺少或冲突哪些参数，以及当前信息是否足以支持可靠分析。详见 [SKILL_RUNTIME_PROTOCOL.md](SKILL_RUNTIME_PROTOCOL.md)。
 
-## 为什么采用函数式命名
+## 统一命名
 
-`Fn` 是 Function 的常见缩写。`REPLY()`、`RFQ()`、`FOLLOWUP()` 等名称强调每个 Skill 都有清晰职责、输入、边界和输出，而不是一组含义宽泛的提示词。
+每个 Skill 都有清晰职责、输入、边界和输出。文件夹名、正式 Skill ID 和 UI 展示名称统一使用小写 `zayn-*` 格式。
 
 每个 WorkFn Skill 都包含三层名称：
 
 1. 正式 Skill ID，例如 `zayn-reply`
-2. 函数式展示名称，例如 `REPLY()`
+2. UI 展示名称，例如 `zayn-reply`
 3. 中文名称，例如“客户回复”
 
 每个正式 `SKILL.md` 必须以 YAML front matter 开头，并包含 `name` 和 `description`。Codex 使用这些字段进行 Skill 识别、卡片展示和调用发现。
@@ -39,7 +39,7 @@ WorkFn 中的每个 Skill 都先执行参数解析和完整度检查。Skill 不
 
 ## 当前开发状态
 
-当前版本为 `v0.1.0` 本地骨架。当前共有 10 个编号分类和 67 个已登记 Skill，并已加入项目级路由与编排、通用与行业专用能力分流、产品理解与技术判断分类以及 Alibaba 平台专用 Skill。部分 Skill 已形成初版测试规则，但尚未完成真实案例验收。
+当前版本为 `v0.1.0` 本地骨架。当前共有 12 个编号分类和 81 个已登记 Skill，并已加入项目级路由与编排、通用与行业专用能力分流、产品理解与技术判断分类以及 Alibaba 平台专用 Skill。部分 Skill 已形成初版测试规则，但尚未完成真实案例验收。
 
 ## Skill 路由与编排
 
