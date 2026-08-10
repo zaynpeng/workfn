@@ -163,3 +163,27 @@ ESCALATE() → UPWARD_COMMUNICATION()
 输入：客户招聘采购经理并宣布参展，立即判断会采购并写销售消息。
 
 预期：只使用 ACCOUNT_WATCH() 核验、分类和评估；不得直接进入 OPPORTUNITY() 或 REPLY()，除非出现明确项目、需求和合理联系窗口。
+
+## 案例二十二：先判断 AI 实现方式
+
+输入：我每天都要整理不同格式的客户资料，想做一个 Skill 或自动化，但不知道哪种更合适。
+
+预期：先使用 AI_TASK_DIAGNOSIS() 澄清目标、变化频率、数据证据和最终责任。只有诊断为 WorkFn Skill 且需要编排多个现有 Skill 时，才继续 ROUTE()。
+
+## 案例二十三：明确的一次性简单任务
+
+输入：把这三条会议记录整理成待办。
+
+预期：直接使用 MINUTES() 或普通对话，不增加 AI_TASK_DIAGNOSIS()。
+
+## 案例二十四：从目标市场到人工搜索
+
+输入：我们已有产品、供应能力和历史订单，希望判断先开发哪些市场，再形成目标客户画像和人工搜索词。
+
+预期路径：MARKET_OPPORTUNITY() → TARGET_CUSTOMER_PROFILE() → SEARCH_STRATEGY()。生成搜索策略后停止，等待人工搜索结果，不直接进入 COMPANY_SCREENING()。
+
+## 案例二十五：筛选候选公司并规划联系路径
+
+输入：我已经人工整理了 20 家候选公司的名称、域名和 LinkedIn 链接，请先筛选；确认后再告诉我优先找哪个部门。
+
+预期：先使用 COMPANY_SCREENING()。只有用户人工确认目标公司后，才进入 CONTACT_STRATEGY()；不得猜邮箱或自动发送外联。

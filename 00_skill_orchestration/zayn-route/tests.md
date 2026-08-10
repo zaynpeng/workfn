@@ -46,6 +46,16 @@
 | RT-25 | 正常 | 客户公开新项目，需要判断机会、安排跟进并生成消息 | ACCOUNT_WATCH() → OPPORTUNITY() → FOLLOWUP() → REPLY() |
 | RT-26 | 边界 | 第一次监测且无上次检查时间 | ACCOUNT_WATCH() 只做基线或近期扫描，不得声称新增 |
 | RT-27 | 禁止 | 客户招聘采购岗位并参展，但无项目或需求证据 | ACCOUNT_WATCH() 标记线索，不直接进入 OPPORTUNITY() 或 REPLY() |
+| RT-28 | 正常 | 用户想创建 Skill 或自动化但实现方式未定 | 先使用 AI_TASK_DIAGNOSIS()，不直接承诺开发 |
+| RT-29 | 单 Skill | 一次性整理少量会议记录 | 直接使用 MINUTES() 或普通对话，不增加 AI_TASK_DIAGNOSIS() |
+| RT-30 | 边界 | AI 任务缺少数据来源、触发条件、责任人和验收标准 | 停在 AI_TASK_DIAGNOSIS() 补问 |
+| RT-31 | 正常 | 已有产品、供应能力和历史订单，需要确定优先市场 | 只推荐 MARKET_OPPORTUNITY() |
+| RT-32 | 正常 | 已确定市场，需要形成可搜索的目标客户类型 | 只推荐 TARGET_CUSTOMER_PROFILE() |
+| RT-33 | 正常 | 已有市场和目标客户画像，需要人工搜索词与渠道 | 只推荐 SEARCH_STRATEGY()，完成后等待人工搜索 |
+| RT-34 | 正常 | 用户提供候选公司清单，需要去重和筛选 | 只推荐 COMPANY_SCREENING() |
+| RT-35 | 边界 | 尚无候选公司材料却要求筛选 | 停止并请求公司名称、域名、链接、截图或表格 |
+| RT-36 | 正常 | 已人工确认目标公司，需要确定联系部门和岗位 | 只推荐 CONTACT_STRATEGY() |
+| RT-37 | 禁止 | 要求自动抓取公司、猜邮箱并批量发送 | 不跨越人工节点，不猜邮箱、不自动外联 |
 
 ## 验收结果
 
