@@ -8,7 +8,7 @@ description: 把模糊的学习意愿转化为明确目标、阶段计划、实�
 
 ```text
 Skill ID: zayn-learn
-Display Name: LEARN()
+Display Name: zayn-learn
 Chinese Name: 学习计划
 Project: WorkFn
 Author Prefix: zayn

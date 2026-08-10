@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-solution"
+  short_description: "面向硬件、设备、备件和二手产品，在问题与责任达到可决策程度后比较远程排查、维修、换货、补发、退款、折扣和延长保修等方案的"
+  default_prompt: "使用 $zayn-solution 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

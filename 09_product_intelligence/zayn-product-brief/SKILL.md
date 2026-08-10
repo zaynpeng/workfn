@@ -8,7 +8,7 @@ description: 面向服务器、存储、内存、硬盘、SSD、GPU、网络设�
 
 ```text
 Skill ID: zayn-product-brief
-Display Name: PRODUCT_BRIEF()
+Display Name: zayn-product-brief
 Chinese Name: 产品速览
 Project: WorkFn
 Author Prefix: zayn

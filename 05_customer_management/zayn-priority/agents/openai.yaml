@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-priority"
+  short_description: "根据成交证据、时间紧迫度、项目价值、当前卡点和所需投入，安排今日优先推进的客户与动作。"
+  default_prompt: "使用 $zayn-priority 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

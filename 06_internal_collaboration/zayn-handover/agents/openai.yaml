@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-handover"
+  short_description: "按事项整理工作交接中的当前状态、资料位置、责任人、截止时间、下一步和风险。"
+  default_prompt: "使用 $zayn-handover 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

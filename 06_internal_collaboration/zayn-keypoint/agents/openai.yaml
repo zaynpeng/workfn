@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-keypoint"
+  short_description: "从大量聊天、项目材料或会议信息中提炼核心结论、关键问题、已确认事实、主要风险和下一步。"
+  default_prompt: "使用 $zayn-keypoint 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

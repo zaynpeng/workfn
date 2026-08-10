@@ -8,7 +8,7 @@ description: 基于原目标、实际结果和关键证据复盘有效动作、�
 
 ```text
 Skill ID: zayn-review
-Display Name: REVIEW()
+Display Name: zayn-review
 Chinese Name: 复盘
 Project: WorkFn
 Author Prefix: zayn

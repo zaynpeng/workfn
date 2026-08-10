@@ -8,7 +8,7 @@ description: 综合采购报价、客户价值、数量、成色、交期、付�
 
 ```text
 Skill ID: zayn-price
-Display Name: PRICE()
+Display Name: zayn-price
 Chinese Name: 价格策略
 Project: WorkFn
 Author Prefix: zayn

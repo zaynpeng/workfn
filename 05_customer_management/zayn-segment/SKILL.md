@@ -8,7 +8,7 @@ description: 根据成交、订单、询价、有效沟通和近期时间节点�
 
 ```text
 Skill ID: zayn-segment
-Display Name: SEGMENT()
+Display Name: zayn-segment
 Chinese Name: 客户分层
 Project: WorkFn
 Author Prefix: zayn

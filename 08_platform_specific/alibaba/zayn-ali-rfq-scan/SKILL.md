@@ -8,7 +8,7 @@ description: 在 Alibaba 采购直达市场中判断 RFQ 是否值得点开、�
 
 ```text
 Skill ID: zayn-ali-rfq-scan
-Display Name: ALI_RFQ_SCAN()
+Display Name: zayn-ali-rfq-scan
 Chinese Name: 阿里 RFQ 市场筛选
 Project: WorkFn
 Author Prefix: zayn

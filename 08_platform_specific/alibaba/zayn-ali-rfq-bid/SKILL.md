@@ -8,7 +8,7 @@ description: 在决定参与 Alibaba RFQ 后，按平台字段生成并检查产
 
 ```text
 Skill ID: zayn-ali-rfq-bid
-Display Name: ALI_RFQ_BID()
+Display Name: zayn-ali-rfq-bid
 Chinese Name: 阿里 RFQ 报价
 Project: WorkFn
 Author Prefix: zayn

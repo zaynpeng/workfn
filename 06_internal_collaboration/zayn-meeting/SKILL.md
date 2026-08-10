@@ -8,7 +8,7 @@ description: 在会议前整理目标、参会人、议题、资料、待决策�
 
 ```text
 Skill ID: zayn-meeting
-Display Name: MEETING()
+Display Name: zayn-meeting
 Chinese Name: 会议准备
 Project: WorkFn
 Author Prefix: zayn

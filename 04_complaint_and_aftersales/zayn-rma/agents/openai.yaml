@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-rma"
+  short_description: "面向硬件、设备、备件和二手产品，依据型号、序列号、测试、保修、供应商窗口、退运和清关条件判断是否接受 RMA，并明确运费"
+  default_prompt: "使用 $zayn-rma 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

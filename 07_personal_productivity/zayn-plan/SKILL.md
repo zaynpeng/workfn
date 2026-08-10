@@ -8,7 +8,7 @@ description: 把模糊目标拆解为有顺序、依赖、时间、资源、责�
 
 ```text
 Skill ID: zayn-plan
-Display Name: PLAN()
+Display Name: zayn-plan
 Chinese Name: 计划拆解
 Project: WorkFn
 Author Prefix: zayn

@@ -8,7 +8,7 @@ description: 判断问题是否需要升级，并整理影响范围、已采取�
 
 ```text
 Skill ID: zayn-escalate
-Display Name: ESCALATE()
+Display Name: zayn-escalate
 Chinese Name: 问题升级
 Project: WorkFn
 Author Prefix: zayn

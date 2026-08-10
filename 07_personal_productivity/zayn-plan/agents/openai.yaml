@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-plan"
+  short_description: "把模糊目标拆解为有顺序、依赖、时间、资源、责任和完成标准的可执行计划。"
+  default_prompt: "使用 $zayn-plan 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

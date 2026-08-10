@@ -8,7 +8,7 @@ description: 在客户压价或提出目标价时，判断应降价、换方案�
 
 ```text
 Skill ID: zayn-negotiate
-Display Name: NEGOTIATE()
+Display Name: zayn-negotiate
 Chinese Name: 价格谈判
 Project: WorkFn
 Author Prefix: zayn

@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-payment"
+  short_description: "根据付款条款、约定日期、财务到账状态和客户承诺，判断是否提醒、如何提醒以及何时升级。"
+  default_prompt: "使用 $zayn-payment 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

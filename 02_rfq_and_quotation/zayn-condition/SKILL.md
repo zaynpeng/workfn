@@ -8,7 +8,7 @@ description: 面向硬件、设备、备件和二手产品，根据包装、外�
 
 ```text
 Skill ID: zayn-condition
-Display Name: CONDITION()
+Display Name: zayn-condition
 Chinese Name: 成色判断
 Project: WorkFn
 Author Prefix: zayn

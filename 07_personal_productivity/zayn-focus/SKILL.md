@@ -8,7 +8,7 @@ description: 检查任务是否被做得过于复杂，并找出可复用资源�
 
 ```text
 Skill ID: zayn-focus
-Display Name: FOCUS()
+Display Name: zayn-focus
 Chinese Name: 任务减重
 Project: WorkFn
 Author Prefix: zayn

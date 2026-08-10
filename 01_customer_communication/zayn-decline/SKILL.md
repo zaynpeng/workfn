@@ -8,7 +8,7 @@ description: 在无法满足客户要求时，明确表达限制、可行边界�
 
 ```text
 Skill ID: zayn-decline
-Display Name: DECLINE()
+Display Name: zayn-decline
 Chinese Name: 拒绝与边界表达
 Project: WorkFn
 Author Prefix: zayn

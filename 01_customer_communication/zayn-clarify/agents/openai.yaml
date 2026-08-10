@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-clarify"
+  short_description: "识别客户需求中的缺失、模糊和冲突信息，并生成低负担、可直接发送的澄清问题。"
+  default_prompt: "使用 $zayn-clarify 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

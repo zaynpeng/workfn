@@ -8,7 +8,7 @@ description: 面向硬件、设备、备件和二手产品投诉，整理订单�
 
 ```text
 Skill ID: zayn-complaint
-Display Name: COMPLAINT()
+Display Name: zayn-complaint
 Chinese Name: 客诉分析
 Project: WorkFn
 Author Prefix: zayn

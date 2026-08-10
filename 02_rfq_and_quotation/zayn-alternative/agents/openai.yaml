@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-alternative"
+  short_description: "面向硬件、设备、备件和二手产品，在原型号、PN、配置、品牌、成色、价格或交期无法满足时比较候选替代品的兼容差异、供应风险"
+  default_prompt: "使用 $zayn-alternative 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

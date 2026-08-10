@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-shipment"
+  short_description: "在货物实际发出后，检查并生成包含承运商、追踪号、箱数、重量、文件和剩余数量的发货通知。"
+  default_prompt: "使用 $zayn-shipment 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-reactivate"
+  short_description: "判断沉睡客户是否值得重新联系，并设计带有真实新价值、低回复负担和停止条件的激活方式。"
+  default_prompt: "使用 $zayn-reactivate 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

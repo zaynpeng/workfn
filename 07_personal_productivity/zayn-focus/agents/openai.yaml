@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-focus"
+  short_description: "检查任务是否被做得过于复杂，并找出可复用资源、最小可用版本、应暂停事项和下一步。"
+  default_prompt: "使用 $zayn-focus 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

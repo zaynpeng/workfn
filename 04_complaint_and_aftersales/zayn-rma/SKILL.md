@@ -8,7 +8,7 @@ description: 面向硬件、设备、备件和二手产品，依据型号、序�
 
 ```text
 Skill ID: zayn-rma
-Display Name: RMA()
+Display Name: zayn-rma
 Chinese Name: 退换货判断
 Project: WorkFn
 Author Prefix: zayn

@@ -8,7 +8,7 @@ description: 基于订单、询价、付款、发货、售后、沟通记录和�
 
 ```text
 Skill ID: zayn-customer-profile
-Display Name: CUSTOMER_PROFILE()
+Display Name: zayn-customer-profile
 Chinese Name: 客户画像
 Project: WorkFn
 Author Prefix: zayn

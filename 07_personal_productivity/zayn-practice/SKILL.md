@@ -8,7 +8,7 @@ description: 把有启发的想法、文章或方法转化为低成本、可验�
 
 ```text
 Skill ID: zayn-practice
-Display Name: PRACTICE()
+Display Name: zayn-practice
 Chinese Name: 实践转化
 Project: WorkFn
 Author Prefix: zayn

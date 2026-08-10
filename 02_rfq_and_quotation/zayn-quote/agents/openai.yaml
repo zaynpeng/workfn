@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-quote"
+  short_description: "在报价发出前检查型号、数量、价格、成色、库存、交期、贸易条款、付款和保修是否完整一致。"
+  default_prompt: "使用 $zayn-quote 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

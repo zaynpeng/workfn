@@ -1,4 +1,4 @@
 interface:
-  display_name: "м╗сцв╢л╛сКжйа©еп╤о"
-  short_description: "©Гппр╣рю╬щ╪ЛяИ╨мяИйуж╓╬щеп╤о╤тоСв╢л╛║╒х╠ощсКййсцочжф"
+  display_name: "zayn-general-condition"
+  short_description: "О©╫О©╫О©╫О©╫р╣О©╫О©╫О©╫щ╪О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫ж╓О©╫О©╫О©╫п╤о╤О©╫О©╫О©╫в╢л╛О©╫О©╫х╠О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫О©╫"
   default_prompt: "Use $zayn-general-condition to classify the item condition using the available evidence."

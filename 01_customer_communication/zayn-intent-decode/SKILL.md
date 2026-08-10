@@ -8,7 +8,7 @@ description: 分析客户原话和上下文，区分明确表达、核心关注�
 
 ```text
 Skill ID: zayn-intent-decode
-Display Name: INTENT_DECODE()
+Display Name: zayn-intent-decode
 Chinese Name: 客户意图解读
 Project: WorkFn
 Author Prefix: zayn

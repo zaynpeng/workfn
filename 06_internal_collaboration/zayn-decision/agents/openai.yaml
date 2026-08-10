@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-decision"
+  short_description: "把复杂问题整理为领导可快速判断的决策事项、证据、方案对比、风险、建议和所需确认。"
+  default_prompt: "使用 $zayn-decision 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

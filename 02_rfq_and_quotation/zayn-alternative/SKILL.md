@@ -8,7 +8,7 @@ description: 面向硬件、设备、备件和二手产品，在原型号、PN�
 
 ```text
 Skill ID: zayn-alternative
-Display Name: ALTERNATIVE()
+Display Name: zayn-alternative
 Chinese Name: 替代方案
 Project: WorkFn
 Author Prefix: zayn

@@ -8,7 +8,7 @@ description: 将文章、书籍或收藏内容整理为收藏原因、对应问�
 
 ```text
 Skill ID: zayn-read
-Display Name: READ()
+Display Name: zayn-read
 Chinese Name: 阅读转化
 Project: WorkFn
 Author Prefix: zayn

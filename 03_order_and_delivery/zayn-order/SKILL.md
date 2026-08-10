@@ -8,7 +8,7 @@ description: 在订单进入执行前，检查产品、数量、价格、成色�
 
 ```text
 Skill ID: zayn-order
-Display Name: ORDER()
+Display Name: zayn-order
 Chinese Name: 订单确认
 Project: WorkFn
 Author Prefix: zayn

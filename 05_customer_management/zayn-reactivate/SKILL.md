@@ -8,7 +8,7 @@ description: 判断沉睡客户是否值得重新联系，并设计带有真实�
 
 ```text
 Skill ID: zayn-reactivate
-Display Name: REACTIVATE()
+Display Name: zayn-reactivate
 Chinese Name: 沉睡客户激活
 Project: WorkFn
 Author Prefix: zayn

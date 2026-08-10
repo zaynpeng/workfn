@@ -8,7 +8,7 @@ description: 根据成交证据、时间紧迫度、项目价值、当前卡点�
 
 ```text
 Skill ID: zayn-priority
-Display Name: PRIORITY()
+Display Name: zayn-priority
 Chinese Name: 今日客户优先级
 Project: WorkFn
 Author Prefix: zayn

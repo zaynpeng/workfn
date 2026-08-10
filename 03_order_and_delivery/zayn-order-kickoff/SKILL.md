@@ -8,7 +8,7 @@ description: 面向硬件、设备和备件订单，在订单确认后组织采�
 
 ```text
 Skill ID: zayn-order-kickoff
-Display Name: ORDER_KICKOFF()
+Display Name: zayn-order-kickoff
 Chinese Name: 订单启动协调
 Project: WorkFn
 Author Prefix: zayn

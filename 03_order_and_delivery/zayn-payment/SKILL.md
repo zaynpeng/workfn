@@ -8,7 +8,7 @@ description: 根据付款条款、约定日期、财务到账状态和客户承�
 
 ```text
 Skill ID: zayn-payment
-Display Name: PAYMENT()
+Display Name: zayn-payment
 Chinese Name: 付款跟进
 Project: WorkFn
 Author Prefix: zayn

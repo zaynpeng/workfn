@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-push"
+  short_description: "识别客户项目当前卡点，并设计能降低决策阻力、推动下一步进展的最小行动。"
+  default_prompt: "使用 $zayn-push 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

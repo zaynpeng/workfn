@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-delay"
+  short_description: "在订单出现延期风险时，区分预警与已延期状态，并设计事实清楚、不过度承诺的客户沟通和解决方案。"
+  default_prompt: "使用 $zayn-delay 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

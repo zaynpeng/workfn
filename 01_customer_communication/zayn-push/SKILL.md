@@ -8,7 +8,7 @@ description: 识别客户项目当前卡点，并设计能降低决策阻力、�
 
 ```text
 Skill ID: zayn-push
-Display Name: PUSH()
+Display Name: zayn-push
 Chinese Name: 推进成交
 Project: WorkFn
 Author Prefix: zayn

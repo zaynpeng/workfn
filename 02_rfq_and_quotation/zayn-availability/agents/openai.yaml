@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-availability"
+  short_description: "面向硬件、设备、备件和二手产品，区分已确认现货、可调货、预计可供、供应商口头反馈、待锁货和信息过期等货源状态，并结合成色"
+  default_prompt: "使用 $zayn-availability 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

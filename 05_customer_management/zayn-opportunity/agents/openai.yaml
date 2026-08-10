@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-opportunity"
+  short_description: "区分普通询价、测试采购、真实项目和长期机会，并判断当前商机信号、缺失条件和推进阶段。"
+  default_prompt: "使用 $zayn-opportunity 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

@@ -8,7 +8,7 @@ description: 基于项目证据复盘未成交或中断原因，区分直接原�
 
 ```text
 Skill ID: zayn-lost
-Display Name: LOST()
+Display Name: zayn-lost
 Chinese Name: 丢单复盘
 Project: WorkFn
 Author Prefix: zayn
