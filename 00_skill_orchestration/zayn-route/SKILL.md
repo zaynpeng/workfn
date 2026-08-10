@@ -13,7 +13,7 @@ Chinese Name: Skill 路由与编排
 Project: WorkFn
 Author Prefix: zayn
 Category: Skill Orchestration
-Version: 0.1.3
+Version: 0.1.5
 Status: Draft for testing
 ```
 
@@ -535,7 +535,23 @@ PRODUCT_SELECTION()
 
 ### 示例十二：商业情报停止条件
 
-公司同名主体无法区分时，停在 `COMPANY_RESEARCH()`；司法辖区不明时，不进入 `BUSINESS_RISK()`；市场地区、产品边界或时间范围不明时，停在 `MARKET_RESEARCH()` 补问；没有我方供应、资金和交付条件时，不进入正式 `PRODUCT_SELECTION()`。
+公司同名主体无法区分时，停在 `COMPANY_RESEARCH()`；司法辖区不明时，不进入 `BUSINESS_RISK()`；账户监测缺少上次检查时间时，`ACCOUNT_WATCH()` 只能执行基线或近期扫描，不得声称发现新增动态；市场地区、产品边界或时间范围不明时，停在 `MARKET_RESEARCH()` 补问；没有我方供应、资金和交付条件时，不进入正式 `PRODUCT_SELECTION()`。
+
+### 示例十三：客户动态到对外跟进
+
+已有明确客户主体、官方来源、我方业务背景和上次检查时间，需要判断新动态是否值得行动：
+
+```text
+ACCOUNT_WATCH()
+↓
+OPPORTUNITY()
+↓
+FOLLOWUP()
+↓
+REPLY()
+```
+
+如果只需要扫描、分类和保存账户动态，单独使用 `ACCOUNT_WATCH()`。只有出现明确项目、需求、预算、时间或采购角色线索时，才进入 `OPPORTUNITY()`；只有动作已经确定且用户要求最终表达时，才进入 `REPLY()`。招聘、参展、普通转发或节日内容不得直接触发完整调用链。
 
 以上示例只是候选路径，不得无条件套用。
 
@@ -605,7 +621,7 @@ ROUTE() 不得：
 ## 20. 当前状态
 
 ```text
-Version: 0.1.3
+Version: 0.1.5
 Status: Draft for testing
 ```
 
@@ -624,8 +640,29 @@ Status: Draft for testing
 1. 调查企业公开主体、业务、团队、认证和经营信号，使用 `zayn-company-research`；历史询价、订单、付款和售后仍使用 `zayn-customer-profile`。
 2. 调查诉讼、处罚、制裁、出口管制、信用和其他合作风险信号，使用 `zayn-business-risk`；主体或司法辖区不明确时停止。
 3. 分析社媒、新闻、论坛、客户评论和员工评价，使用 `zayn-social-listening`；单条或匿名评论不得升级为整体结论。
-4. 已有公司、风险和业务资料，需要判断与我方能力是否匹配，使用 `zayn-company-fit`；是否值得继续投入由 `zayn-qualify` 判断。
-5. 将具体竞争对手与我方比较，使用 `zayn-competitor-analysis`；调查单一企业基本信息时使用 `zayn-company-research`。
-6. 研究行业、地区、客户、产业链、需求、供应、监管和竞争格局，使用 `zayn-market-research`。
-7. 已有市场证据和候选产品，需要结合供应、资金、库存、利润、物流和售后能力判断进入机会，使用 `zayn-product-selection`。
-8. 市场情报调用中必须保留主体、来源、日期、事实/推断状态和信息缺口；不得因搜索不到而输出不存在或无风险。
+4. 持续检查某一已确认账户相对历史状态的公开变化、判断信号和行动价值，使用 `zayn-account-watch`；无上次检查时间时只做基线或近期扫描。一次性企业背景调查仍使用 `zayn-company-research`，阶段性舆情分析仍使用 `zayn-social-listening`。
+5. 已有公司、风险和业务资料，需要判断与我方能力是否匹配，使用 `zayn-company-fit`；是否值得继续投入由 `zayn-qualify` 判断。
+6. 将具体竞争对手与我方比较，使用 `zayn-competitor-analysis`；调查单一企业基本信息时使用 `zayn-company-research`。
+7. 研究行业、地区、客户、产业链、需求、供应、监管和竞争格局，使用 `zayn-market-research`。
+8. 已有市场证据和候选产品，需要结合供应、资金、库存、利润、物流和售后能力判断进入机会，使用 `zayn-product-selection`。
+9. `ACCOUNT_WATCH()` 只把已确认项目、需求、时间窗口、来源和信息缺口传给 `OPPORTUNITY()`；不要把招聘、参展或弱信号直接传成采购需求，也不要自行生成最终回复。
+10. 市场情报调用中必须保留主体、来源、日期、事实/推断状态和信息缺口；不得因搜索不到而输出不存在或无风险。
+
+## 23. AI 任务方案诊断选择
+
+1. 用户准备创建 Skill、自动化、程序工具、模板、工作流或 AI 助手，但尚未确认实现方式时，先使用 `zayn-ai-task-diagnosis`。
+2. `AI_TASK_DIAGNOSIS()` 通过目标、变化频率、数据证据和最终责任四问，判断应采用普通对话、Skill、定时或条件自动化、程序、模板、人工、人机协作或暂时不做。
+3. 用户已经明确指定一个现有 Skill，或请求只是一次性、低风险且可直接完成的简单任务时，不增加 `AI_TASK_DIAGNOSIS()`。
+4. 诊断结论为 WorkFn Skill 且任务涉及多个现有 Skill 时，再进入 `ROUTE()`；目标已确认但需要拆解执行步骤时使用 `PLAN()`；方案明显过度复杂时使用 `FOCUS()`。
+5. 数据来源、触发条件、责任人或验收标准不清时，停在 `AI_TASK_DIAGNOSIS()` 补问，不得直接承诺自动化或程序开发。
+
+## 24. 目标市场客户开发选择
+
+1. 判断哪些国家、地区、行业或应用场景值得测试、重点开发或暂不进入，使用 `zayn-market-opportunity`。宏观市场结构与趋势研究仍使用 `zayn-market-research`。
+2. 把目标市场和我方能力转成“要找哪类公司”的可搜索画像，使用 `zayn-target-customer-profile`。整理某个已有客户的历史事实仍使用 `zayn-customer-profile`。
+3. 已有目标市场、产品或服务和客户画像，需要规划人工搜索关键词、渠道和顺序，使用 `zayn-search-strategy`；不得将其用于自动批量抓取。
+4. 用户已人工提供候选公司名称、域名、链接、截图、Excel 或 CSV，需要去重、核验和筛选，使用 `zayn-company-screening`。单一企业深度公开调查仍使用 `zayn-company-research`。
+5. 公司已被人工确认，且需要规划联系部门、岗位、查找路径与开发角度，使用 `zayn-contact-strategy`。最终客户消息由 `FOLLOWUP()`、`REPLY()` 或 `RELATION()` 生成。
+6. 完整业务过程可参考 `MARKET_OPPORTUNITY() → TARGET_CUSTOMER_PROFILE() → SEARCH_STRATEGY() → 人工搜索 → COMPANY_SCREENING() → 人工确认 → CONTACT_STRATEGY()`，但 ROUTE() 每次只推荐当前阶段真正需要的 Skill，不跨越人工搜索或人工确认节点。
+7. 未明确产品或服务、目标市场和我方供应能力时，不进入正式市场机会判断；没有候选公司材料时，不进入公司筛选；没有人工确认的公司和证据时，不进入联系策略。
+8. 不自动批量搜索、不猜测邮箱、不自动发送外联、不自动写入作战池。

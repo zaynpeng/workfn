@@ -3,6 +3,7 @@
 | 分类 | Skill ID | Display Name | 中文名称 | 用途 | 当前状态 | 优先级 |
 |---|---|---|---|---|---|---|
 | Skill Orchestration | zayn-route | ROUTE() | Skill 路由与编排 | 识别问题，选择合适的 Skill，安排调用顺序、参数传递和停止条件 | 等待测试 | P0 |
+| Skill Orchestration | zayn-ai-task-diagnosis | AI_TASK_DIAGNOSIS() | AI 任务四问 | 在创建 Skill、自动化、程序或 AI 工作流前，用目标、变化频率、数据证据和最终责任判断最合适的实现方式 | Draft for testing | P0 |
 | 客户沟通 | zayn-reply | REPLY() | 客户回复 | 根据客户原话、事实和目标，检查风险并决定如何回复 | Draft for testing | P0 |
 | 客户沟通 | zayn-followup | FOLLOWUP() | 客户跟进 | 判断是否应该跟进、何时跟进以及跟进什么 | Draft for testing | P0 |
 | 客户沟通 | zayn-clarify | CLARIFY() | 需求澄清 | 识别客户需求中缺失的关键信息并生成澄清方向 | Draft for testing | P1 |
@@ -72,8 +73,13 @@
 | 市场与商业情报 | zayn-company-research | COMPANY_RESEARCH() | 企业公开信息调查 | 确认企业主体并调查公开背景、业务、规模信号、团队、认证和近期动态 | Draft for testing | P1 |
 | 市场与商业情报 | zayn-business-risk | BUSINESS_RISK() | 企业合作风险调查 | 调查诉讼、处罚、制裁、出口管制、信用和其他公开合作风险信号 | Draft for testing | P1 |
 | 市场与商业情报 | zayn-social-listening | SOCIAL_LISTENING() | 社媒与网络舆情分析 | 分析社媒、新闻、论坛、客户评论和员工评价中的公开信号及样本限制 | Draft for testing | P2 |
-| 市场与商业情报 | zayn-account-watch | ACCOUNT_WATCH() | 客户动态跟踪与商机信号分析 | 持续发现重点账户的公开新增动态，区分信号、判断行动价值并维护去重和处理状态 | Draft for testing | P1 |
+| 市场与商业情报 | zayn-account-watch | ACCOUNT_WATCH() | 客户动态跟踪与商机信号分析 | 跟踪重点账户的公开动态变化，区分信号、判断行动价值并维护去重和处理状态 | Draft for testing | P1 |
 | 市场与商业情报 | zayn-company-fit | COMPANY_FIT() | 潜在客户匹配度分析 | 结合企业研究、合作风险、业务证据和我方能力判断合作匹配程度 | Draft for testing | P1 |
 | 市场与商业情报 | zayn-competitor-analysis | COMPETITOR_ANALYSIS() | 竞争对手分析 | 以公开证据比较竞争重叠、优势、弱点、威胁和差异化机会 | Draft for testing | P2 |
 | 市场与商业情报 | zayn-market-research | MARKET_RESEARCH() | 行业与市场调研 | 在明确行业、地区、客户和时间范围内研究市场结构、趋势、机会与风险 | Draft for testing | P1 |
 | 市场与商业情报 | zayn-product-selection | PRODUCT_SELECTION() | 市场选品与机会评估 | 结合市场需求、供应、资金、库存、利润、物流和售后风险评估候选产品 | Draft for testing | P2 |
+| 目标市场客户开发 | zayn-market-opportunity | MARKET_OPPORTUNITY() | 目标市场机会判断 | 基于产品、供应能力和历史业务证据判断值得测试、重点开发或暂不进入的国家、地区、行业和应用场景 | Draft for testing | P1 |
+| 目标市场客户开发 | zayn-target-customer-profile | TARGET_CUSTOMER_PROFILE() | 目标客户画像 | 把目标市场和供应能力转化为可搜索、可筛选的目标客户类型、采购场景、识别信号与排除条件 | Draft for testing | P1 |
+| 目标市场客户开发 | zayn-search-strategy | SEARCH_STRATEGY() | 客户搜索策略 | 为人工搜索规划 Google、LinkedIn、本地语言、行业目录、展会和采购网站的关键词与顺序 | Draft for testing | P1 |
+| 目标市场客户开发 | zayn-company-screening | COMPANY_SCREENING() | 目标公司筛选 | 对人工提供的候选公司资料去重、核验证据并输出匹配度、优先级、风险和排除原因 | Draft for testing | P1 |
+| 目标市场客户开发 | zayn-contact-strategy | CONTACT_STRATEGY() | 联系路径策略 | 针对人工确认的目标公司规划优先联系部门、岗位、查找路径、首次开发角度和联系前准备 | Draft for testing | P1 |
