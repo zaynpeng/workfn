@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-cross-functional-collaboration"
+  short_description: "处理跨部门协同、进度确认、信息补充、风险同步和内部沟通表达，区分已确认事实、用户判断和待确认信息，避免过早承诺、推责、情"
+  default_prompt: "使用 $zayn-cross-functional-collaboration 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-delivery"
+  short_description: "把采购、工程、质检、包装、物流和客户交期要求整理成可执行的交付计划、关键路径和预警节点。"
+  default_prompt: "使用 $zayn-delivery 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

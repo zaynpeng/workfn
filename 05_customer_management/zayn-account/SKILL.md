@@ -8,7 +8,7 @@ description: 为重点客户制定阶段性经营策略，梳理决策链、当�
 
 ```text
 Skill ID: zayn-account
-Display Name: ACCOUNT()
+Display Name: zayn-account
 Chinese Name: 客户策略
 Project: WorkFn
 Author Prefix: zayn

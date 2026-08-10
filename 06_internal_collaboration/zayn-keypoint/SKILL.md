@@ -8,7 +8,7 @@ description: 从大量聊天、项目材料或会议信息中提炼核心结论�
 
 ```text
 Skill ID: zayn-keypoint
-Display Name: KEYPOINT()
+Display Name: zayn-keypoint
 Chinese Name: 重点梳理
 Project: WorkFn
 Author Prefix: zayn

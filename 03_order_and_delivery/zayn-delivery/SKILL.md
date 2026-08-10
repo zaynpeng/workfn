@@ -8,7 +8,7 @@ description: 把采购、工程、质检、包装、物流和客户交期要求�
 
 ```text
 Skill ID: zayn-delivery
-Display Name: DELIVERY()
+Display Name: zayn-delivery
 Chinese Name: 交付计划
 Project: WorkFn
 Author Prefix: zayn

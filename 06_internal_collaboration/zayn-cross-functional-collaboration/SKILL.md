@@ -8,7 +8,7 @@ description: 处理跨部门协同、进度确认、信息补充、风险同步�
 
 ```text
 Skill ID: zayn-cross-functional-collaboration
-Display Name: CROSS_FUNCTIONAL_COLLABORATION()
+Display Name: zayn-cross-functional-collaboration
 Chinese Name: 跨部门协同
 Project: WorkFn
 Author Prefix: zayn

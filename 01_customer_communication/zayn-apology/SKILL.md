@@ -8,7 +8,7 @@ description: 在事实、责任边界和解决方案基本明确后，生成不�
 
 ```text
 Skill ID: zayn-apology
-Display Name: APOLOGY()
+Display Name: zayn-apology
 Chinese Name: 道歉与问题说明
 Project: WorkFn
 Author Prefix: zayn

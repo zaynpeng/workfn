@@ -8,7 +8,7 @@ description: 面向硬件、设备、备件和二手产品，区分已确认现�
 
 ```text
 Skill ID: zayn-availability
-Display Name: AVAILABILITY()
+Display Name: zayn-availability
 Chinese Name: 货源与库存判断
 Project: WorkFn
 Author Prefix: zayn

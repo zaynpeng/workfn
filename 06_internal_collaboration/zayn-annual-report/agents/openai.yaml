@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-annual-report"
+  short_description: "基于全年目标、月报、年中报告、项目记录和业务结果，复盘年度目标达成、关键成果、业务结构、能力成长、资源配置、重大问题和下"
+  default_prompt: "使用 $zayn-annual-report 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

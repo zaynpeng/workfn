@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-route"
+  short_description: "分析复杂职场问题并编排最合适的 WorkFn Skill 调用顺序"
+  default_prompt: "使用 $zayn-route 分析当前问题，选择合适的 Skill，并规划调用顺序、参数传递、停止条件和最终输出。"

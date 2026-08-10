@@ -1,4 +1,4 @@
 interface:
-  display_name: "Í¨ÓÃÍË»»Óë²¹¾ÈÊÜÀí"
-  short_description: "¿çĞĞÒµÅĞ¶ÏÍË»»¡¢ÖØ×ö¡¢ÍË¿î¡¢È¡ÏûÓëÆäËû²¹¾ÈÇëÇóµÄÊÜÀíÂ·¾¶"
+  display_name: "zayn-general-rma"
+  short_description: "ï¿½ï¿½ï¿½ï¿½Òµï¿½Ğ¶ï¿½ï¿½Ë»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¿î¡¢È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â·ï¿½ï¿½"
   default_prompt: "Use $zayn-general-rma to determine the appropriate return, refund, rework, or service remedy path."

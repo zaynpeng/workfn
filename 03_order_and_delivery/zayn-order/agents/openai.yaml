@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-order"
+  short_description: "在订单进入执行前，检查产品、数量、价格、成色、付款、交期、贸易条款和特殊要求是否完整一致。"
+  default_prompt: "使用 $zayn-order 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

@@ -8,7 +8,7 @@ description: 识别客户需求中的缺失、模糊和冲突信息，并生成�
 
 ```text
 Skill ID: zayn-clarify
-Display Name: CLARIFY()
+Display Name: zayn-clarify
 Chinese Name: 需求澄清
 Project: WorkFn
 Author Prefix: zayn

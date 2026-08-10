@@ -8,7 +8,7 @@ description: 在货物实际发出后，检查并生成包含承运商、追踪�
 
 ```text
 Skill ID: zayn-shipment
-Display Name: SHIPMENT()
+Display Name: zayn-shipment
 Chinese Name: 发货通知
 Project: WorkFn
 Author Prefix: zayn

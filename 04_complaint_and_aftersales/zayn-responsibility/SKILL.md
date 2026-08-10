@@ -8,7 +8,7 @@ description: 面向硬件、设备、备件和二手产品售后，依据订单�
 
 ```text
 Skill ID: zayn-responsibility
-Display Name: RESPONSIBILITY()
+Display Name: zayn-responsibility
 Chinese Name: 责任边界
 Project: WorkFn
 Author Prefix: zayn

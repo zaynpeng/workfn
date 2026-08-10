@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-price"
+  short_description: "综合采购报价、客户价值、数量、成色、交期、付款和风险，制定报价策略和可谈边界。"
+  default_prompt: "使用 $zayn-price 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

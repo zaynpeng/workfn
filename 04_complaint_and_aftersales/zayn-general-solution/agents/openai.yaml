@@ -1,4 +1,4 @@
 interface:
-  display_name: "Í¨ÓÃÎÊÌâ½â¾ö·½°¸"
-  short_description: "¿çĞĞÒµ±È½ÏĞŞ¸´¡¢ÖØ×ö¡¢ÍË¿îµÈ²¹¾È·½°¸µÄ³É±¾¡¢·çÏÕÓëÓ°Ïì"
+  display_name: "zayn-general-solution"
+  short_description: "ï¿½ï¿½ï¿½ï¿½Òµï¿½È½ï¿½ï¿½Ş¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë¿ï¿½È²ï¿½ï¿½È·ï¿½ï¿½ï¿½ï¿½Ä³É±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó°ï¿½ï¿½"
   default_prompt: "Use $zayn-general-solution to compare resolution options, costs, risks, and customer impact."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-apology"
+  short_description: "在事实、责任边界和解决方案基本明确后，生成不过度认责且能体现诚意的道歉与问题说明。"
+  default_prompt: "使用 $zayn-apology 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

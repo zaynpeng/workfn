@@ -8,7 +8,7 @@ description: 按事项整理工作交接中的当前状态、资料位置、责�
 
 ```text
 Skill ID: zayn-handover
-Display Name: HANDOVER()
+Display Name: zayn-handover
 Chinese Name: 工作交接
 Project: WorkFn
 Author Prefix: zayn

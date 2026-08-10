@@ -1,4 +1,4 @@
 interface:
-  display_name: "Í¨ÓÃ¿ÉÓÃĞÔÅĞ¶Ï"
-  short_description: "¿çĞĞÒµÅĞ¶Ï²úÆ·¡¢·şÎñÓë¸÷Àà×ÊÔ´µÄÕæÊµ¿ÉÓÃ×´Ì¬ºÍÌõ¼ş"
+  display_name: "zayn-general-availability"
+  short_description: "ï¿½ï¿½ï¿½ï¿½Òµï¿½Ğ¶Ï²ï¿½Æ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½×´Ì¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"
   default_prompt: "Use $zayn-general-availability to assess availability and state what can be promised."

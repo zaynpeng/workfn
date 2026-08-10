@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-intent-decode"
+  short_description: "分析客户原话和上下文，区分明确表达、核心关注点、可能意图和仍需确认的信息。"
+  default_prompt: "使用 $zayn-intent-decode 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

@@ -8,7 +8,7 @@ description: 面向硬件、设备、备件和二手产品，在问题与责任�
 
 ```text
 Skill ID: zayn-solution
-Display Name: SOLUTION()
+Display Name: zayn-solution
 Chinese Name: 售后方案
 Project: WorkFn
 Author Prefix: zayn

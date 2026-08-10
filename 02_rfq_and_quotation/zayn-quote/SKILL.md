@@ -8,7 +8,7 @@ description: 在报价发出前检查型号、数量、价格、成色、库存�
 
 ```text
 Skill ID: zayn-quote
-Display Name: QUOTE()
+Display Name: zayn-quote
 Chinese Name: 报价检查
 Project: WorkFn
 Author Prefix: zayn

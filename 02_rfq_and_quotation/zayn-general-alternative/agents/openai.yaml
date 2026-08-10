@@ -1,4 +1,4 @@
 interface:
-  display_name: "Í¨ÓÃÌæ´ú·½°¸"
-  short_description: "¿çĞĞÒµ±È½ÏÌæ´úÑ¡Ïî¡¢¹Ø¼ü²îÒì¡¢ÊµÊ©·çÏÕ¡¢ÊÊÓÃÌõ¼şÓëÈ·ÈÏ±ß½ç"
+  display_name: "zayn-general-alternative"
+  short_description: "ï¿½ï¿½ï¿½ï¿½Òµï¿½È½ï¿½ï¿½ï¿½ï¿½Ñ¡ï¿½î¡¢ï¿½Ø¼ï¿½ï¿½ï¿½ï¿½ì¡¢ÊµÊ©ï¿½ï¿½ï¿½Õ¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È·ï¿½Ï±ß½ï¿½"
   default_prompt: "Use $zayn-general-alternative to compare these replacement options and identify confirmation risks."

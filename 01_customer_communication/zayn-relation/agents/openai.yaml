@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-relation"
+  short_description: "在没有具体询价或项目推进时，设计低压力、有真实价值的客户关系维护方式。"
+  default_prompt: "使用 $zayn-relation 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

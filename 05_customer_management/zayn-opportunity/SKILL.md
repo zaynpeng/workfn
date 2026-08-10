@@ -8,7 +8,7 @@ description: 区分普通询价、测试采购、真实项目和长期机会，�
 
 ```text
 Skill ID: zayn-opportunity
-Display Name: OPPORTUNITY()
+Display Name: zayn-opportunity
 Chinese Name: 商机判断
 Project: WorkFn
 Author Prefix: zayn

@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-ali-rfq-scan"
+  short_description: "在 Alibaba 采购直达市场中判断 RFQ 是否值得点开、报价和消耗报价权益，并识别商业价值与执行风险。"
+  default_prompt: "使用 $zayn-ali-rfq-scan 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

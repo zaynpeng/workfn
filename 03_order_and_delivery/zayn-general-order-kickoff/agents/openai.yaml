@@ -1,4 +1,4 @@
 interface:
-  display_name: "通用订单与项目启动"
-  short_description: "跨行业组织订单、服务合同或项目启动、分工、里程碑与风险"
+  display_name: "zayn-general-order-kickoff"
+  short_description: "锟斤拷锟斤拷业锟斤拷织锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟酵拷锟斤拷锟侥匡拷锟斤拷锟斤拷锟街癸拷锟斤拷锟斤拷瘫锟斤拷锟斤拷锟斤拷"
   default_prompt: "Use $zayn-general-order-kickoff to create an executable kickoff checklist and ownership plan."

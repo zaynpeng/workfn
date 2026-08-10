@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-daily-report"
+  short_description: "将当天工作记录转化为结果、状态、下一步、负责人和截止时间，区分动作与有效推进，识别等待、阻塞、暂停和退出事项，并生成适合"
+  default_prompt: "使用 $zayn-daily-report 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

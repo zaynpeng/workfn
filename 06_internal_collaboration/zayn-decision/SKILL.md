@@ -8,7 +8,7 @@ description: 把复杂问题整理为领导可快速判断的决策事项、证�
 
 ```text
 Skill ID: zayn-decision
-Display Name: DECISION()
+Display Name: zayn-decision
 Chinese Name: 决策请求
 Project: WorkFn
 Author Prefix: zayn

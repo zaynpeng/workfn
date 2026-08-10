@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-request"
+  short_description: "向采购、工程、财务、物流等内部角色提出背景充分、问题具体、截止时间明确的可执行请求。"
+  default_prompt: "使用 $zayn-request 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

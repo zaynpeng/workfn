@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-report"
+  short_description: "识别用户需要的汇报类型、对象、目的与时间范围，并将日报、周报、月报、年中报告、年度报告、项目汇报、问题升级和决策请求路由"
+  default_prompt: "使用 $zayn-report 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

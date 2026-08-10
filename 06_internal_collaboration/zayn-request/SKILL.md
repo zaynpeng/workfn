@@ -8,7 +8,7 @@ description: 向采购、工程、财务、物流等内部角色提出背景充�
 
 ```text
 Skill ID: zayn-request
-Display Name: REQUEST()
+Display Name: zayn-request
 Chinese Name: 内部请求
 Project: WorkFn
 Author Prefix: zayn

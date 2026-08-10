@@ -8,7 +8,7 @@ description: 分析一条已收到的询价，判断需求真实性、信息完�
 
 ```text
 Skill ID: zayn-rfq
-Display Name: RFQ()
+Display Name: zayn-rfq
 Chinese Name: 询价判断
 Project: WorkFn
 Author Prefix: zayn

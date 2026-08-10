@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-ali-rfq-bid"
+  short_description: "在决定参与 Alibaba RFQ 后，按平台字段生成并检查产品、价格、数量、交期、贸易条款、保修和买家留言。"
+  default_prompt: "使用 $zayn-ali-rfq-bid 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

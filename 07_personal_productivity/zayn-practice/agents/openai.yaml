@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-practice"
+  short_description: "把有启发的想法、文章或方法转化为低成本、可验证、有停止条件的最小实践。"
+  default_prompt: "使用 $zayn-practice 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

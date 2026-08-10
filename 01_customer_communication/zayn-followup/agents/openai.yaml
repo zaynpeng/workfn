@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-followup"
+  short_description: "根据客户状态、上次沟通、时间节点和可补充价值，判断是否跟进、何时跟进以及跟进什么。"
+  default_prompt: "使用 $zayn-followup 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

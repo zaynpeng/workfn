@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-customer-profile"
+  short_description: "基于订单、询价、付款、发货、售后、沟通记录和公开资料，整理可追溯的客户事实画像与信息缺口。"
+  default_prompt: "使用 $zayn-customer-profile 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

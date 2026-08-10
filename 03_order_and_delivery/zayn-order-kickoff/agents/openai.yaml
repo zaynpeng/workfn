@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-order-kickoff"
+  short_description: "面向硬件、设备和备件订单，在订单确认后组织采购、工程、质检、包装、物流和财务核对货源、配置兼容、固件、测试、标签序列号"
+  default_prompt: "使用 $zayn-order-kickoff 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

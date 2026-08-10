@@ -1,4 +1,4 @@
 interface:
-  display_name: "Í¨ÓÃÍ¶Ëß·ÖÎö"
-  short_description: "¿çĞĞÒµÊáÀí²úÆ·¡¢·şÎñ»òÏîÄ¿Í¶ËßµÄÊÂÊµ¡¢Ö¤¾İÓë´¦Àí½×¶Î"
+  display_name: "zayn-general-complaint"
+  short_description: "ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Í¶ï¿½ßµï¿½ï¿½ï¿½Êµï¿½ï¿½Ö¤ï¿½ï¿½ï¿½ë´¦ï¿½ï¿½×¶ï¿½"
   default_prompt: "Use $zayn-general-complaint to analyze this complaint and determine the next evidence-based action."

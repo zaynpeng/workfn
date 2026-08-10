@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-review"
+  short_description: "基于原目标、实际结果和关键证据复盘有效动作、无效动作、可控因素、不可控因素和下次调整。"
+  default_prompt: "使用 $zayn-review 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

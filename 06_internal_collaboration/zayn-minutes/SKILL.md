@@ -8,7 +8,7 @@ description: 将会议内容整理为已确认结论、行动项、责任人、�
 
 ```text
 Skill ID: zayn-minutes
-Display Name: MINUTES()
+Display Name: zayn-minutes
 Chinese Name: 会议纪要
 Project: WorkFn
 Author Prefix: zayn

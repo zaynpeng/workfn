@@ -1,4 +1,4 @@
 interface:
-  display_name: "Í¨ÓÃ²úÆ·Óë·şÎñËÙÀÀ"
-  short_description: "¿çĞĞÒµÕûÀíÊµÌå²úÆ·¡¢Êı×Ö²úÆ·»ò·şÎñµÄÓÃÍ¾¡¢ÄÜÁ¦ÓëĞÅÏ¢È±¿Ú"
+  display_name: "zayn-general-product-brief"
+  short_description: "ï¿½ï¿½ï¿½ï¿½Òµï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ï¿½Æ·ï¿½ï¿½ï¿½ï¿½ï¿½Ö²ï¿½Æ·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢È±ï¿½ï¿½"
   default_prompt: "Use $zayn-general-product-brief to create an evidence-based brief for this product or service."

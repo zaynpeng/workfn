@@ -8,7 +8,7 @@ description: 在没有具体询价或项目推进时，设计低压力、有真�
 
 ```text
 Skill ID: zayn-relation
-Display Name: RELATION()
+Display Name: zayn-relation
 Chinese Name: 客户关系维护
 Project: WorkFn
 Author Prefix: zayn

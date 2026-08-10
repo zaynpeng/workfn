@@ -1,0 +1,4 @@
+interface:
+  display_name: "zayn-condition"
+  short_description: "面向硬件、设备、备件和二手产品，根据包装、外观、标签、序列号、测试、维修记录和保修信息判断全新原装、库存新件、拆机、翻新"
+  default_prompt: "使用 $zayn-condition 处理当前任务，并根据已提供信息生成清晰、可执行的结果。"

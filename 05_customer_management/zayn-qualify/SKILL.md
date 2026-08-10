@@ -8,7 +8,7 @@ description: 基于真实业务证据判断客户是否值得继续投入，并�
 
 ```text
 Skill ID: zayn-qualify
-Display Name: QUALIFY()
+Display Name: zayn-qualify
 Chinese Name: 客户资格判断
 Project: WorkFn
 Author Prefix: zayn

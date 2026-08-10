@@ -8,7 +8,7 @@ description: 在订单出现延期风险时，区分预警与已延期状态，�
 
 ```text
 Skill ID: zayn-delay
-Display Name: DELAY()
+Display Name: zayn-delay
 Chinese Name: 交期异常
 Project: WorkFn
 Author Prefix: zayn
