@@ -8,7 +8,7 @@ description: 分析复杂职场问题，判断应先使用哪个 Skill，并规�
 
 ```text
 Skill ID: zayn-route
-Display Name: ROUTE()
+Display Name: zayn-route
 Chinese Name: Skill 路由与编排
 Project: WorkFn
 Author Prefix: zayn
