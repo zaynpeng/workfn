@@ -6,7 +6,7 @@
 
 ## 已完成
 
-- 当前共有 10 个编号分类和 67 个已登记 Skill。
+- 当前共有 12 个编号分类和 82 个已登记 Skill。
 - 每个 Skill 建立 `README.md`、`SKILL.md`、`examples.md`、`tests.md` 和 `changelog.md` 5 个标准 Markdown 文件；需要时增加 `agents/openai.yaml` 和运行参考文件。
 - 建立项目索引、开发规范、贡献规范、发布准备说明、许可证选择说明和平台适配占位。
 - `REPLY()` 已升级至 `v0.2.0` 测试规范，包含最新必填参数、双运行模式、停止条件、职责边界和正式输出结构。
@@ -30,6 +30,7 @@
 - 已按专用提示词完成 `REVIEW()`、`FOCUS()`、`LEARN()`、`PLAN()`、`PRACTICE()` 和 `READ()` 的 `v0.1` 初版规则。
 - 已合并 `PRODUCT_BRIEF()`、`ALI_RFQ_SCAN()` 和 `ALI_RFQ_BID()` 完整版提示词要求，并保留原有更详细的业务规则。
 - 已新增 `ROUTE()` Skill 路由与编排初版规则。
+- 已新增 `NETWORKMAP()` 公开关系研究 Skill，覆盖行业与展会、行业与协会、公司与近期活动三种模式，并建立证据、角色和名单完整度边界。
 - `ROUTE()` 位于所有业务 Skill 之上，只负责选择 Skill、安排顺序、管理参数传递和设置停止条件，不直接完成业务分析。
 - 已为所有 WorkFn Skill 统一增加 `zayn-` 前缀的正式 Skill ID，用于体现 Zayn 的个人品牌。
 - 已将全部 51 个原有 Skill 的末级文件夹名称统一为对应的 `zayn-` 正式 Skill ID，同时保留函数式 Display Name 和中文名称。

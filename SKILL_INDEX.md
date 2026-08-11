@@ -77,6 +77,7 @@
 | 市场与商业情报 | zayn-company-fit | COMPANY_FIT() | 潜在客户匹配度分析 | 结合企业研究、合作风险、业务证据和我方能力判断合作匹配程度 | Draft for testing | P1 |
 | 市场与商业情报 | zayn-competitor-analysis | COMPETITOR_ANALYSIS() | 竞争对手分析 | 以公开证据比较竞争重叠、优势、弱点、威胁和差异化机会 | Draft for testing | P2 |
 | 市场与商业情报 | zayn-market-research | MARKET_RESEARCH() | 行业与市场调研 | 在明确行业、地区、客户和时间范围内研究市场结构、趋势、机会与风险 | Draft for testing | P1 |
+| 市场与商业情报 | zayn-networkmap | NETWORKMAP() | 公开行业关系研究 | 基于可追溯证据研究行业、展会、协会、活动与公司的公开关系 | Draft for testing | P1 |
 | 市场与商业情报 | zayn-product-selection | PRODUCT_SELECTION() | 市场选品与机会评估 | 结合市场需求、供应、资金、库存、利润、物流和售后风险评估候选产品 | Draft for testing | P2 |
 | 目标市场客户开发 | zayn-market-opportunity | MARKET_OPPORTUNITY() | 目标市场机会判断 | 基于产品、供应能力和历史业务证据判断值得测试、重点开发或暂不进入的国家、地区、行业和应用场景 | Draft for testing | P1 |
 | 目标市场客户开发 | zayn-target-customer-profile | TARGET_CUSTOMER_PROFILE() | 目标客户画像 | 把目标市场和供应能力转化为可搜索、可筛选的目标客户类型、采购场景、识别信号与排除条件 | Draft for testing | P1 |
